@@ -1,0 +1,1370 @@
+<div class="main">
+<div class="fldblock">
+<h2>MT&nbsp;548: (24) Field 22a: Indicator</h2>
+
+<div class="fldfmt">
+<h3>Format</h3>
+
+<table border="0" cellpadding="5" width="100%" class="format formattable">
+<tbody><tr valign="top">
+<td width="20%">Option F</td>
+<td width="30%">:4!c/[8c]/4!c</td>
+<td width="50%">(Qualifier)(Data Source Scheme)(Indicator)</td>
+</tr>
+<tr valign="top">
+<td>Option H</td>
+<td>:4!c//4!c</td>
+<td>(Qualifier)(Indicator)</td>
+</tr>
+</tbody></table>
+
+
+</div>
+
+<div class="fldpres">
+<h3>Presence</h3>
+<p>Mandatory in optional sequence B</p>
+</div>
+
+<div class="fldqual">
+<h3>Qualifier</h3>
+<p><span class="ecs"> (Error code(s): <a href="publications/usgf_20180720/3.0?topic=ect89.htm" class="ecode">T89</a>)</span></p>
+<table border="1" cellpadding="5" width="100%" class="qualifiertab">
+<tbody><tr valign="top">
+<th width="10%"><p>Order</p></th>
+<th width="8%"><p>M/O</p></th>
+<th width="13%"><p>Qualifier</p></th>
+<th width="7%"><p>R/N</p></th>
+<th width="8%"><p>CR</p></th>
+<th width="10%"><p>Options</p></th>
+<th width="43%"><p>Qualifier Description</p></th>
+</tr>
+<tr valign="top">
+<td width="10%"><p>1</p></td>
+<td width="8%"><p>M</p></td>
+<td width="13%"><p>SETR</p></td>
+<td width="7%"><p>N</p></td>
+<td width="8%"><p>&nbsp;</p></td>
+<td width="10%"><p>F</p></td>
+<td width="43%"><p>Type of Settlement Transaction Indicator</p></td>
+</tr>
+<tr valign="top">
+<td><p>2</p></td>
+<td><p>M</p></td>
+<td><p>REDE</p></td>
+<td><p>N</p></td>
+<td><p>&nbsp;</p></td>
+<td><p>H</p></td>
+<td><p>Receive/Deliver Indicator</p></td>
+</tr>
+<tr valign="top">
+<td><p>3</p></td>
+<td><p>M</p></td>
+<td><p>PAYM</p></td>
+<td><p>N</p></td>
+<td><p>&nbsp;</p></td>
+<td><p>H</p></td>
+<td><p>Payment Indicator</p></td>
+</tr>
+<tr valign="top">
+<td><p>4</p></td>
+<td><p>O</p></td>
+<td><p>STCO</p></td>
+<td><p>R</p></td>
+<td><p>&nbsp;</p></td>
+<td><p>F</p></td>
+<td><p>Settlement Transaction Condition Indicator</p></td>
+</tr>
+<tr valign="top">
+<td><p>5</p></td>
+<td><p>O</p></td>
+<td><p>TRCA</p></td>
+<td><p>N</p></td>
+<td><p>&nbsp;</p></td>
+<td><p>F</p></td>
+<td><p>Party Capacity Indicator</p></td>
+</tr>
+<tr valign="top">
+<td><p>6</p></td>
+<td><p>O</p></td>
+<td><p>STAM</p></td>
+<td><p>N</p></td>
+<td><p>&nbsp;</p></td>
+<td><p>F</p></td>
+<td><p>Stamp Duty Indicator</p></td>
+</tr>
+<tr valign="top">
+<td><p>7</p></td>
+<td><p>O</p></td>
+<td><p>RTGS</p></td>
+<td><p>N</p></td>
+<td><p>&nbsp;</p></td>
+<td><p>F</p></td>
+<td><p>Securities Real-Time Gross Settlement Indicator</p></td>
+</tr>
+<tr valign="top">
+<td><p>8</p></td>
+<td><p>O</p></td>
+<td><p>REGT</p></td>
+<td><p>N</p></td>
+<td><p>&nbsp;</p></td>
+<td><p>F</p></td>
+<td><p>Registration Indicator</p></td>
+</tr>
+<tr valign="top">
+<td><p>9</p></td>
+<td><p>O</p></td>
+<td><p>BENE</p></td>
+<td><p>N</p></td>
+<td><p>&nbsp;</p></td>
+<td><p>F</p></td>
+<td><p>Beneficial Ownership Indicator</p></td>
+</tr>
+<tr valign="top">
+<td><p>10</p></td>
+<td><p>O</p></td>
+<td><p>CASY</p></td>
+<td><p>N</p></td>
+<td><p>&nbsp;</p></td>
+<td><p>F</p></td>
+<td><p>Cash Settlement System Indicator</p></td>
+</tr>
+<tr valign="top">
+<td><p>11</p></td>
+<td><p>O</p></td>
+<td><p>TCPI</p></td>
+<td><p>N</p></td>
+<td><p>&nbsp;</p></td>
+<td><p>F</p></td>
+<td><p>Tax Capacity Party Indicator</p></td>
+</tr>
+<tr valign="top">
+<td><p>12</p></td>
+<td><p>O</p></td>
+<td><p>REPT</p></td>
+<td><p>N</p></td>
+<td><p>&nbsp;</p></td>
+<td><p>F</p></td>
+<td><p>Repurchase Type Indicator</p></td>
+</tr>
+<tr valign="top">
+<td><p>13</p></td>
+<td><p>O</p></td>
+<td><p>MACL</p></td>
+<td><p>N</p></td>
+<td><p>&nbsp;</p></td>
+<td><p>F</p></td>
+<td><p>Market Side Indicator</p></td>
+</tr>
+<tr valign="top">
+<td><p>14</p></td>
+<td><p>O</p></td>
+<td><p>BLOC</p></td>
+<td><p>N</p></td>
+<td><p>&nbsp;</p></td>
+<td><p>F</p></td>
+<td><p>Block Trade Indicator</p></td>
+</tr>
+<tr valign="top">
+<td><p>15</p></td>
+<td><p>O</p></td>
+<td><p>REST</p></td>
+<td><p>N</p></td>
+<td><p>&nbsp;</p></td>
+<td><p>F</p></td>
+<td><p>Restrictions Indicator</p></td>
+</tr>
+<tr valign="top">
+<td><p>16</p></td>
+<td><p>O</p></td>
+<td><p>SETS</p></td>
+<td><p>N</p></td>
+<td><p>&nbsp;</p></td>
+<td><p>F</p></td>
+<td><p>Settlement System/Method Indicator</p></td>
+</tr>
+<tr valign="top">
+<td><p>17</p></td>
+<td><p>O</p></td>
+<td><p>NETT</p></td>
+<td><p>N</p></td>
+<td><p>&nbsp;</p></td>
+<td><p>F</p></td>
+<td><p>Netting Eligibility Indicator</p></td>
+</tr>
+<tr valign="top">
+<td><p>18</p></td>
+<td><p>O</p></td>
+<td><p>CCPT</p></td>
+<td><p>N</p></td>
+<td><p>&nbsp;</p></td>
+<td><p>F</p></td>
+<td><p>CCP Eligibility Indicator</p></td>
+</tr>
+<tr valign="top">
+<td><p>19</p></td>
+<td><p>O</p></td>
+<td><p>LEOG</p></td>
+<td><p>N</p></td>
+<td><p>&nbsp;</p></td>
+<td><p>F</p></td>
+<td><p>Letter of Guarantee Indicator</p></td>
+</tr>
+<tr valign="top">
+<td><p>20</p></td>
+<td><p>O</p></td>
+<td><p>COLA</p></td>
+<td><p>N</p></td>
+<td><p>&nbsp;</p></td>
+<td><p>F</p></td>
+<td><p>Exposure Type Indicator</p></td>
+</tr>
+<tr valign="top">
+<td><p>21</p></td>
+<td><p>O</p></td>
+<td><p>COLE</p></td>
+<td><p>N</p></td>
+<td><p>&nbsp;</p></td>
+<td><p>F</p></td>
+<td><p>Collateral Pool Indicator</p></td>
+</tr>
+</tbody></table>
+
+
+</div>
+
+<div class="flddfn">
+<h3>Definition</h3>
+<p>This qualified generic field specifies:</p>
+<table border="0" cellpadding="5" width="100%" class="qualifierdefinitiontab">
+<tbody><tr valign="top">
+<td width="13%"><p>BENE</p></td>
+<td width="20%"><p>Beneficial Ownership Indicator</p></td>
+<td width="67%"><p>Specifies whether there is change of beneficial ownership.</p></td>
+</tr>
+<tr valign="top">
+<td><p>BLOC</p></td>
+<td><p>Block Trade Indicator</p></td>
+<td><p>Specifies whether the settlement instruction is a block parent or child.</p></td>
+</tr>
+<tr valign="top">
+<td><p>CASY</p></td>
+<td><p>Cash Settlement System Indicator</p></td>
+<td><p>Specifies what cash settlement system is instructed to be used.</p></td>
+</tr>
+<tr valign="top">
+<td><p>CCPT</p></td>
+<td><p>CCP Eligibility Indicator</p></td>
+<td><p>Specifies whether the settlement transaction is CCP (Central Counterparty) eligible.</p></td>
+</tr>
+<tr valign="top">
+<td><p>COLA</p></td>
+<td><p>Exposure Type Indicator</p></td>
+<td><p>Specifies the underlying business area/type of trade causing the collateral movement.</p></td>
+</tr>
+<tr valign="top">
+<td><p>COLE</p></td>
+<td><p>Collateral Pool Indicator</p></td>
+<td><p>Specifies whether securities should be included in the pool of securities eligible for collateral purposes.</p></td>
+</tr>
+<tr valign="top">
+<td><p>LEOG</p></td>
+<td><p>Letter of Guarantee Indicator</p></td>
+<td><p>Specifies whether physical settlement may be executed using a letter of guarantee or if the physical certificates should be used.</p></td>
+</tr>
+<tr valign="top">
+<td><p>MACL</p></td>
+<td><p>Market Side Indicator</p></td>
+<td><p>Specifies whether an instruction is for a market side or a client side transaction.</p></td>
+</tr>
+<tr valign="top">
+<td><p>NETT</p></td>
+<td><p>Netting Eligibility Indicator</p></td>
+<td><p>Specifies whether the settlement transaction is eligible for netting.</p></td>
+</tr>
+<tr valign="top">
+<td><p>PAYM</p></td>
+<td><p>Payment Indicator</p></td>
+<td><p>Specifies whether the instruction is free or against payment.</p></td>
+</tr>
+<tr valign="top">
+<td><p>REDE</p></td>
+<td><p>Receive/Deliver Indicator</p></td>
+<td><p>Specifies whether the transaction is a receipt or delivery of financial instruments.</p></td>
+</tr>
+<tr valign="top">
+<td><p>REGT</p></td>
+<td><p>Registration Indicator</p></td>
+<td><p>Specifies whether registration should occur upon receipt.</p></td>
+</tr>
+<tr valign="top">
+<td><p>REPT</p></td>
+<td><p>Repurchase Type Indicator</p></td>
+<td><p>Specifies the type of repurchase transaction.</p></td>
+</tr>
+<tr valign="top">
+<td><p>REST</p></td>
+<td><p>Restrictions Indicator</p></td>
+<td><p>Restrictions governing the transfer of ownership of security.</p></td>
+</tr>
+<tr valign="top">
+<td><p>RTGS</p></td>
+<td><p>Securities Real-Time Gross Settlement Indicator</p></td>
+<td><p>Specifies whether the settlement transaction is to be settled through an RTGS or a non RTGS system.</p></td>
+</tr>
+<tr valign="top">
+<td><p>SETR</p></td>
+<td><p>Type of Settlement Transaction Indicator</p></td>
+<td><p>Specifies underlying information regarding the type of settlement transaction.</p></td>
+</tr>
+<tr valign="top">
+<td><p>SETS</p></td>
+<td><p>Settlement System/Method Indicator</p></td>
+<td><p>Specifies whether the settlement instruction is to be settled through the default or the alternate settlement system.</p></td>
+</tr>
+<tr valign="top">
+<td><p>STAM</p></td>
+<td><p>Stamp Duty Indicator</p></td>
+<td><p>Specifies the stamp duty type or exemption reason applicable to the settlement instruction.</p></td>
+</tr>
+<tr valign="top">
+<td><p>STCO</p></td>
+<td><p>Settlement Transaction Condition Indicator</p></td>
+<td><p>Specifies the conditions under which the order/trade was to be settled.</p></td>
+</tr>
+<tr valign="top">
+<td><p>TCPI</p></td>
+<td><p>Tax Capacity Party Indicator</p></td>
+<td><p>Specifies the tax role capacity of the instructing party.</p></td>
+</tr>
+<tr valign="top">
+<td><p>TRCA</p></td>
+<td><p>Party Capacity Indicator</p></td>
+<td><p>Specifies the role of the party in the transaction.</p></td>
+</tr>
+</tbody></table>
+
+
+</div>
+
+<div class="fldctu">
+<h3>Codes</h3>
+<p>In option F, if Qualifier is SETR and Data Source Scheme is not present, Indicator must contain one of the following codes <span class="ecs"> (Error code(s): <a href="publications/usgf_20180720/3.0?topic=ecknn.htm" class="ecode">K22</a>)</span>:</p>
+<table border="0" cellpadding="5" width="100%" class="codestable">
+<tbody><tr valign="top">
+<td width="13%"><p>BSBK</p></td>
+<td width="20%"><p>Buy Sell Back</p></td>
+<td width="67%"><p>Relates to a buy sell back transaction.</p></td>
+</tr>
+<tr valign="top">
+<td><p>BYIY</p></td>
+<td><p>Buy In</p></td>
+<td><p>The transaction relates to a buy-in by the market following a delivery transaction failure.</p></td>
+</tr>
+<tr valign="top">
+<td><p>CLAI</p></td>
+<td><p>Market Claim</p></td>
+<td><p>Transaction resulting from a market claim.</p></td>
+</tr>
+<tr valign="top">
+<td><p>CNCB</p></td>
+<td><p>Central Bank Collateral Operation</p></td>
+<td><p>Relates to a collateral delivery/receipt to a National Central Bank for central bank credit operations.</p></td>
+</tr>
+<tr valign="top">
+<td><p>COLI</p></td>
+<td><p>Collateral In</p></td>
+<td><p>Relates to a collateral transaction, from the point of view of the collateral taker or its agent.</p></td>
+</tr>
+<tr valign="top">
+<td><p>COLO</p></td>
+<td><p>Collateral Out</p></td>
+<td><p>Relates to a collateral transaction, from the point of view of the collateral giver or its agent.</p></td>
+</tr>
+<tr valign="top">
+<td><p>CONV</p></td>
+<td><p>DR Conversion</p></td>
+<td><p>Relates to a depository receipt conversion.</p></td>
+</tr>
+<tr valign="top">
+<td><p>ETFT</p></td>
+<td><p>Exchange Traded Funds</p></td>
+<td><p>Relates to an exchange traded fund (ETF) creation or redemption.</p></td>
+</tr>
+<tr valign="top">
+<td><p>FCTA</p></td>
+<td><p>Factor Update</p></td>
+<td><p>Relates to a factor update.</p></td>
+</tr>
+<tr valign="top">
+<td><p>INSP</p></td>
+<td><p>Move of Stock</p></td>
+<td><p>Relates to a movement of shares into or out of a pooled account.</p></td>
+</tr>
+<tr valign="top">
+<td><p>ISSU</p></td>
+<td><p>Issuance</p></td>
+<td><p>Relates to the issuance of a security such as an equity or a depository receipt.</p></td>
+</tr>
+<tr valign="top">
+<td><p>MKDW</p></td>
+<td><p>Mark-Down</p></td>
+<td><p>Relates to the decrease of positions held by an ICSD at the common depository due to custody operations (repurchase, pre-release, proceed of corp. event realigned).</p></td>
+</tr>
+<tr valign="top">
+<td><p>MKUP</p></td>
+<td><p>Mark-Up</p></td>
+<td><p>Relates to the increase of positions held by an ICSD at the common depository due to custody operations (repurchase, pre-release, proceed of corporate event realigned).</p></td>
+</tr>
+<tr valign="top">
+<td><p>NETT</p></td>
+<td><p>Netting</p></td>
+<td><p>Relates to the netting of settlement instructions.</p></td>
+</tr>
+<tr valign="top">
+<td><p>NSYN</p></td>
+<td><p>Non Syndicated</p></td>
+<td><p>Relates to the issue of medium and short term paper (CP, CD, MTN, notes ...) under a program and without syndication arrangement.</p></td>
+</tr>
+<tr valign="top">
+<td><p>OWNE</p></td>
+<td><p>External Account Transfer</p></td>
+<td><p>Relates to an account transfer involving more than one instructing party (messages sender) and/or account servicer (messages receiver).</p></td>
+</tr>
+<tr valign="top">
+<td><p>OWNI</p></td>
+<td><p>Internal Account Transfer</p></td>
+<td><p>Relates to an account transfer involving one instructing party (messages sender) at one account servicer (messages receiver).</p></td>
+</tr>
+<tr valign="top">
+<td><p>PAIR</p></td>
+<td><p>Pair-Off</p></td>
+<td><p>Relates to a pair-off: the transaction is paired off and netted against one or more previous transactions.</p></td>
+</tr>
+<tr valign="top">
+<td><p>PLAC</p></td>
+<td><p>Placement</p></td>
+<td><p>Relates to the placement/new issue of a financial instrument.</p></td>
+</tr>
+<tr valign="top">
+<td><p>PORT</p></td>
+<td><p>Portfolio Move</p></td>
+<td><p>Relates to a portfolio move from one investment manager to another and/or from an account servicer to another. It is generally charged differently than another account transfer (OWNE, OWNI, INSP), hence the need to identify this type of transfer as such.</p></td>
+</tr>
+<tr valign="top">
+<td><p>PREA</p></td>
+<td><p>Pre-Advice</p></td>
+<td><p>Transaction is a pre-advice, that is for matching purposes only.</p></td>
+</tr>
+<tr valign="top">
+<td><p>REAL</p></td>
+<td><p>Realignment</p></td>
+<td><p>Relates to a realignment of positions.</p></td>
+</tr>
+<tr valign="top">
+<td><p>REDI</p></td>
+<td><p>Withdrawal</p></td>
+<td><p>Relates to the withdrawal of specified amounts from specified sub-accounts.</p></td>
+</tr>
+<tr valign="top">
+<td><p>REDM</p></td>
+<td><p>Redemption (Funds)</p></td>
+<td><p>Relates to a redemption of Funds (Funds Industry ONLY).</p></td>
+</tr>
+<tr valign="top">
+<td><p>RELE</p></td>
+<td><p>DR Release/Cancellation</p></td>
+<td><p>Relates to a release (into/from local) of Depository Receipt operation.</p></td>
+</tr>
+<tr valign="top">
+<td><p>REPU</p></td>
+<td><p>Repo</p></td>
+<td><p>Relates to a repurchase agreement transaction.</p></td>
+</tr>
+<tr valign="top">
+<td><p>RODE</p></td>
+<td><p>Return of Delivery Without Matching</p></td>
+<td><p>Relates to the return of financial instruments resulting from a rejected delivery without matching operation.</p></td>
+</tr>
+<tr valign="top">
+<td><p>RVPO</p></td>
+<td><p>Reverse Repo</p></td>
+<td><p>Relates to a reverse repurchase agreement transaction.</p></td>
+</tr>
+<tr valign="top">
+<td><p>SBBK</p></td>
+<td><p>Sell Buy Back</p></td>
+<td><p>Relates to a sell buy back transaction.</p></td>
+</tr>
+<tr valign="top">
+<td><p>SBRE</p></td>
+<td><p>Borrowing Reallocation</p></td>
+<td><p>Internal reallocation of a borrowed holding from one safekeeping account to another.</p></td>
+</tr>
+<tr valign="top">
+<td><p>SECB</p></td>
+<td><p>Securities Borrowing</p></td>
+<td><p>Relates to a securities borrowing operation.</p></td>
+</tr>
+<tr valign="top">
+<td><p>SECL</p></td>
+<td><p>Securities Lending</p></td>
+<td><p>Relates to a securities lending operation.</p></td>
+</tr>
+<tr valign="top">
+<td><p>SLRE</p></td>
+<td><p>Lending Reallocation</p></td>
+<td><p>Internal reallocation of a holding on loan from one safekeeping account to another.</p></td>
+</tr>
+<tr valign="top">
+<td><p>SUBS</p></td>
+<td><p>Subscription (Funds)</p></td>
+<td><p>Relates to a subscription to funds (Funds Industry ONLY).</p></td>
+</tr>
+<tr valign="top">
+<td><p>SWIF</p></td>
+<td><p>Switch From</p></td>
+<td><p>Transaction is a change of an investment from one sub-fund to another sub-fund.</p></td>
+</tr>
+<tr valign="top">
+<td><p>SWIT</p></td>
+<td><p>Switch To</p></td>
+<td><p>Transaction is a change of an investment from one sub-fund to another sub-fund.</p></td>
+</tr>
+<tr valign="top">
+<td><p>SYND</p></td>
+<td><p>Syndicate of Underwriters</p></td>
+<td><p>Relates to the issue of financial instruments through a syndicate of underwriters and a Lead Manager.</p></td>
+</tr>
+<tr valign="top">
+<td><p>TBAC</p></td>
+<td><p>TBA Closing</p></td>
+<td><p>Relates to a To Be Announced (TBA) closing trade.</p></td>
+</tr>
+<tr valign="top">
+<td><p>TRAD</p></td>
+<td><p>Trade</p></td>
+<td><p>Relates to the settlement of a trade.</p></td>
+</tr>
+<tr valign="top">
+<td><p>TRPO</p></td>
+<td><p>Triparty Repo</p></td>
+<td><p>Relates to a triparty repurchase agreement.</p></td>
+</tr>
+<tr valign="top">
+<td><p>TRVO</p></td>
+<td><p>Triparty Reverse Repo</p></td>
+<td><p>Relates to a triparty reverse repurchase agreement.</p></td>
+</tr>
+<tr valign="top">
+<td><p>TURN</p></td>
+<td><p>Turnaround</p></td>
+<td><p>Relates to a turnaround: the same security is bought and sold to settle the same day, to or from different brokers.</p></td>
+</tr>
+</tbody></table>
+
+
+</div>
+
+<div class="fldctu">
+<h3>Codes</h3>
+<p>In option H, if Qualifier is REDE, Indicator must contain one of the following codes <span class="ecs"> (Error code(s): <a href="publications/usgf_20180720/3.0?topic=ecknn.htm" class="ecode">K22</a>)</span>:</p>
+<table border="0" cellpadding="5" width="100%" class="codestable">
+<tbody><tr valign="top">
+<td width="13%"><p>DELI</p></td>
+<td width="20%"><p>Deliver</p></td>
+<td width="67%"><p>Financial Instruments will be debited from the safekeeping account.</p></td>
+</tr>
+<tr valign="top">
+<td><p>RECE</p></td>
+<td><p>Receive</p></td>
+<td><p>Financial Instruments will be credited to the safekeeping account.</p></td>
+</tr>
+</tbody></table>
+
+
+</div>
+
+<div class="fldctu">
+<h3>Codes</h3>
+<p>In option H, if Qualifier is PAYM, Indicator must contain one of the following codes <span class="ecs"> (Error code(s): <a href="publications/usgf_20180720/3.0?topic=ecknn.htm" class="ecode">K22</a>)</span>:</p>
+<table border="0" cellpadding="5" width="100%" class="codestable">
+<tbody><tr valign="top">
+<td width="13%"><p>APMT</p></td>
+<td width="20%"><p>Against Payment</p></td>
+<td width="67%"><p>Against payment.</p></td>
+</tr>
+<tr valign="top">
+<td><p>FREE</p></td>
+<td><p>Free</p></td>
+<td><p>Free of payment.</p></td>
+</tr>
+</tbody></table>
+
+
+</div>
+
+<div class="fldctu">
+<h3>Codes</h3>
+<p>In option F, if Qualifier is STCO and Data Source Scheme is not present, Indicator must contain one of the following codes <span class="ecs"> (Error code(s): <a href="publications/usgf_20180720/3.0?topic=ecknn.htm" class="ecode">K22</a>)</span>:</p>
+<table border="0" cellpadding="5" width="100%" class="codestable">
+<tbody><tr valign="top">
+<td width="13%"><p>ASGN</p></td>
+<td width="20%"><p>Assignment</p></td>
+<td width="67%"><p>Transfer of ownership of the asset to another party during the closing of an option.</p></td>
+</tr>
+<tr valign="top">
+<td><p>BUTC</p></td>
+<td><p>Buy to Cover</p></td>
+<td><p>Settlement transaction is a buy to cover.</p></td>
+</tr>
+<tr valign="top">
+<td><p>CLEN</p></td>
+<td><p>Clean</p></td>
+<td><p>Tax-exempt financial instruments are to be settled.</p></td>
+</tr>
+<tr valign="top">
+<td><p>DIRT</p></td>
+<td><p>Dirty</p></td>
+<td><p>Taxable financial instruments are to be settled.</p></td>
+</tr>
+<tr valign="top">
+<td><p>DLWM</p></td>
+<td><p>Delivery Without Matching</p></td>
+<td><p>Matching receipt instruction not required (only for concerned ICSD and CSD).</p></td>
+</tr>
+<tr valign="top">
+<td><p>DRAW</p></td>
+<td><p>Drawn</p></td>
+<td><p>Settlement transactions relates to drawn securities.</p></td>
+</tr>
+<tr valign="top">
+<td><p>EXER</p></td>
+<td><p>Exercised</p></td>
+<td><p>Settlement transaction relates to options, futures or derivatives that are exercised.</p></td>
+</tr>
+<tr valign="top">
+<td><p>EXPI</p></td>
+<td><p>Expired</p></td>
+<td><p>Settlement transaction relates to options, futures or derivatives that have expired.</p></td>
+</tr>
+<tr valign="top">
+<td><p>FRCL</p></td>
+<td><p>Free Clean Settlement</p></td>
+<td><p>Delivery will be made free of payment but a clean payment order will be sent.</p></td>
+</tr>
+<tr valign="top">
+<td><p>KNOC</p></td>
+<td><p>Knocked Out</p></td>
+<td><p>Settlement transaction relates to options, futures or derivatives that are expired worthless.</p></td>
+</tr>
+<tr valign="top">
+<td><p>NACT</p></td>
+<td><p>Not Accounting Related</p></td>
+<td><p>Security transaction is not for accounting.</p></td>
+</tr>
+<tr valign="top">
+<td><p>NOMC</p></td>
+<td><p>No Automatic Market Claim</p></td>
+<td><p>No market claim should be automatically generated.</p></td>
+</tr>
+<tr valign="top">
+<td><p>NPAR</p></td>
+<td><p>No Partial Settlement Allowed</p></td>
+<td><p>Partial settlement is not allowed.</p></td>
+</tr>
+<tr valign="top">
+<td><p>PART</p></td>
+<td><p>Partial Settlement</p></td>
+<td><p>Partial settlement is allowed.</p></td>
+</tr>
+<tr valign="top">
+<td><p>PENS</p></td>
+<td><p>Pending Sale</p></td>
+<td><p>Accounting information that the position to cover the pending sale will be available by contractual settlement date.</p></td>
+</tr>
+<tr valign="top">
+<td><p>PHYS</p></td>
+<td><p>Physical</p></td>
+<td><p>Securities are to be physically settled.</p></td>
+</tr>
+<tr valign="top">
+<td><p>RESI</p></td>
+<td><p>CSD Payment Only</p></td>
+<td><p>Relates to transaction on a security that is not eligible at the Central Securities Depository (CSD) but for which the payment will be enacted by the CSD.</p></td>
+</tr>
+<tr valign="top">
+<td><p>RHYP</p></td>
+<td><p>Re-hypothecation</p></td>
+<td><p>Collateral position is available for other purposes (for example, onwards delivery).</p></td>
+</tr>
+<tr valign="top">
+<td><p>RPTO</p></td>
+<td><p>Reporting</p></td>
+<td><p>Relates to a transaction that is for reporting purposes only.</p></td>
+</tr>
+<tr valign="top">
+<td><p>SHOR</p></td>
+<td><p>Short Sale Indicator</p></td>
+<td><p>Settlement transaction will create a short position.</p></td>
+</tr>
+<tr valign="top">
+<td><p>SPDL</p></td>
+<td><p>Special Delivery</p></td>
+<td><p>Settlement transactions to be settled with special delivery.</p></td>
+</tr>
+<tr valign="top">
+<td><p>SPST</p></td>
+<td><p>Split Settlement</p></td>
+<td><p>Money and financial instruments settle in different locations.</p></td>
+</tr>
+<tr valign="top">
+<td><p>TRAN</p></td>
+<td><p>Transformation</p></td>
+<td><p>Transaction resulting from a transformation.</p></td>
+</tr>
+<tr valign="top">
+<td><p>TRIP</p></td>
+<td><p>Triparty Collateral Segregation</p></td>
+<td><p>Triparty segregation of collateral, typically requested by an IM to their custodian to comply with a no delivery of collateral regulation.</p></td>
+</tr>
+<tr valign="top">
+<td><p>UNEX</p></td>
+<td><p>Unexposed</p></td>
+<td><p>Delivery cannot be performed until money is received.</p></td>
+</tr>
+</tbody></table>
+
+
+</div>
+
+<div class="fldctu">
+<h3>Codes</h3>
+<p>In option F, if Qualifier is TRCA and Data Source Scheme is not present, Indicator must contain one of the following codes <span class="ecs"> (Error code(s): <a href="publications/usgf_20180720/3.0?topic=ecknn.htm" class="ecode">K22</a>)</span>:</p>
+<table border="0" cellpadding="5" width="100%" class="codestable">
+<tbody><tr valign="top">
+<td width="13%"><p>CUST</p></td>
+<td width="20%"><p>Settling as a Custodian</p></td>
+<td width="67%"><p>Settlement party is a custodian. It receives/delivers the securities and carries out custodial duties.</p></td>
+</tr>
+<tr valign="top">
+<td><p>RISP</p></td>
+<td><p>Settling as Riskless Principal</p></td>
+<td><p>Party settles trades that were simultaneously offset.</p></td>
+</tr>
+<tr valign="top">
+<td><p>SAGE</p></td>
+<td><p>Settling as an Agent</p></td>
+<td><p>Party settles trades on behalf of his client for which he also traded.</p></td>
+</tr>
+<tr valign="top">
+<td><p>SPRI</p></td>
+<td><p>Settling as a Principal</p></td>
+<td><p>Party settles its own trades.</p></td>
+</tr>
+</tbody></table>
+
+
+</div>
+
+<div class="fldctu">
+<h3>Codes</h3>
+<p>In option F, if Qualifier is RTGS and Data Source Scheme is not present, Indicator must contain one of the following codes <span class="ecs"> (Error code(s): <a href="publications/usgf_20180720/3.0?topic=ecknn.htm" class="ecode">K22</a>)</span>:</p>
+<table border="0" cellpadding="5" width="100%" class="codestable">
+<tbody><tr valign="top">
+<td width="13%"><p>NRTG</p></td>
+<td width="20%"><p>Non-RTGS</p></td>
+<td width="67%"><p>Settle through the non-RTGS system. If there is a standing instruction in place for settlement through the RTGS instruction, then this standing instruction is to be ignored.</p></td>
+</tr>
+<tr valign="top">
+<td><p>YRTG</p></td>
+<td><p>RTGS</p></td>
+<td><p>Settle through the RTGS system. If there is a standing instruction in place for settlement through the non-RTGS system, then this standing instruction is to be ignored.</p></td>
+</tr>
+</tbody></table>
+
+
+</div>
+
+<div class="fldctu">
+<h3>Codes</h3>
+<p>In option F, if Qualifier is REGT and Data Source Scheme is not present, Indicator must contain one of the following codes <span class="ecs"> (Error code(s): <a href="publications/usgf_20180720/3.0?topic=ecknn.htm" class="ecode">K22</a>)</span>:</p>
+<table border="0" cellpadding="5" width="100%" class="codestable">
+<tbody><tr valign="top">
+<td width="13%"><p>NREG</p></td>
+<td width="20%"><p>Street Name</p></td>
+<td width="67%"><p>Hold the securities in street name. If there is a standing instruction in place to register on receipt, then this standing instruction is to be ignored.</p></td>
+</tr>
+<tr valign="top">
+<td><p>YREG</p></td>
+<td><p>Register</p></td>
+<td><p>Register on receipt. If there is a standing instruction in place to hold the securities in street name, then this standing instruction is to be ignored.</p></td>
+</tr>
+</tbody></table>
+
+
+</div>
+
+<div class="fldctu">
+<h3>Codes</h3>
+<p>In option F, if Qualifier is BENE and Data Source Scheme is not present, Indicator must contain one of the following codes <span class="ecs"> (Error code(s): <a href="publications/usgf_20180720/3.0?topic=ecknn.htm" class="ecode">K22</a>)</span>:</p>
+<table border="0" cellpadding="5" width="100%" class="codestable">
+<tbody><tr valign="top">
+<td width="13%"><p>NBEN</p></td>
+<td width="20%"><p>NCBO</p></td>
+<td width="67%"><p>No Change of Beneficial Ownership (NCBO). If a standing instruction is in place for change of beneficial ownership (CBO), then this standing instruction is to be ignored.</p></td>
+</tr>
+<tr valign="top">
+<td><p>YBEN</p></td>
+<td><p>CBO</p></td>
+<td><p>Change of Beneficial Ownership (CBO). If a standing instruction is in place for no change of beneficial ownership (NCBO), then this standing instruction is to be ignored.</p></td>
+</tr>
+</tbody></table>
+
+
+</div>
+
+<div class="fldctu">
+<h3>Codes</h3>
+<p>In option F, if Qualifier is CASY and Data Source Scheme is not present, Indicator must contain one of the following codes <span class="ecs"> (Error code(s): <a href="publications/usgf_20180720/3.0?topic=ecknn.htm" class="ecode">K22</a>)</span>:</p>
+<table border="0" cellpadding="5" width="100%" class="codestable">
+<tbody><tr valign="top">
+<td width="13%"><p>GROS</p></td>
+<td width="20%"><p>Gross Settlement System</p></td>
+<td width="67%"><p>Settle money through gross settlement system.</p></td>
+</tr>
+<tr valign="top">
+<td><p>NETS</p></td>
+<td><p>Net Settlement System</p></td>
+<td><p>Settle money through net settlement system.</p></td>
+</tr>
+</tbody></table>
+
+
+</div>
+
+<div class="fldctu">
+<h3>Codes</h3>
+<p>In option F, if Qualifier is TCPI and Data Source Scheme is not present, Indicator must contain one of the following codes <span class="ecs"> (Error code(s): <a href="publications/usgf_20180720/3.0?topic=ecknn.htm" class="ecode">K22</a>)</span>:</p>
+<table border="0" cellpadding="5" width="100%" class="codestable">
+<tbody><tr valign="top">
+<td width="13%"><p>AGEN</p></td>
+<td width="20%"><p>Agent</p></td>
+<td width="67%"><p>Acting as an agent for tax liability.</p></td>
+</tr>
+<tr valign="top">
+<td><p>PRIN</p></td>
+<td><p>Principal</p></td>
+<td><p>Acting as a principal for tax liability.</p></td>
+</tr>
+</tbody></table>
+
+
+</div>
+
+<div class="fldctu">
+<h3>Codes</h3>
+<p>In option F, if Qualifier is REPT and Data Source Scheme is not present, Indicator must contain one of the following codes <span class="ecs"> (Error code(s): <a href="publications/usgf_20180720/3.0?topic=ecknn.htm" class="ecode">K22</a>)</span>:</p>
+<table border="0" cellpadding="5" width="100%" class="codestable">
+<tbody><tr valign="top">
+<td width="13%"><p>CADJ</p></td>
+<td width="20%"><p>Swap/Substitution</p></td>
+<td width="67%"><p>Relates to a repo collateral substitution.</p></td>
+</tr>
+<tr valign="top">
+<td><p>CALL</p></td>
+<td><p>Repo Call</p></td>
+<td><p>Relates to the early closing/maturity date for a term repo or the termination date of an open repo with underlying collateral.</p></td>
+</tr>
+<tr valign="top">
+<td><p>PADJ</p></td>
+<td><p>Principal/Exposure Adjustment</p></td>
+<td><p>Relates to a principal adjustment.</p></td>
+</tr>
+<tr valign="top">
+<td><p>PAIR</p></td>
+<td><p>Pair-Off</p></td>
+<td><p>Relates to a repo that is part of a pair-off.</p></td>
+</tr>
+<tr valign="top">
+<td><p>RATE</p></td>
+<td><p>Repo Rate</p></td>
+<td><p>Relates to a change in the repo rate.</p></td>
+</tr>
+<tr valign="top">
+<td><p>ROLP</p></td>
+<td><p>Repo Contract Rollover</p></td>
+<td><p>Relates to a repo rollover of a contract extending the closing or maturity date without impacting underlying collateral.</p></td>
+</tr>
+<tr valign="top">
+<td><p>TOPU</p></td>
+<td><p>Top-Up</p></td>
+<td><p>Relates to a cover of securities position due to deficit of collateral following mark to market valuation.</p></td>
+</tr>
+<tr valign="top">
+<td><p>WTHD</p></td>
+<td><p>Withdrawal</p></td>
+<td><p>Relates to a return of securities position due to excess of collateral following mark to market valuation.</p></td>
+</tr>
+</tbody></table>
+
+
+</div>
+
+<div class="fldctu">
+<h3>Codes</h3>
+<p>In option F, if Qualifier is MACL and Data Source Scheme is not present, Indicator must contain one of the following codes <span class="ecs"> (Error code(s): <a href="publications/usgf_20180720/3.0?topic=ecknn.htm" class="ecode">K22</a>)</span>:</p>
+<table border="0" cellpadding="5" width="100%" class="codestable">
+<tbody><tr valign="top">
+<td width="13%"><p>CLNT</p></td>
+<td width="20%"><p>Client Side</p></td>
+<td width="67%"><p>Instruction is for a client side transaction.</p></td>
+</tr>
+<tr valign="top">
+<td><p>MAKT</p></td>
+<td><p>Market Side</p></td>
+<td><p>Instruction is for a market side transaction.</p></td>
+</tr>
+</tbody></table>
+
+
+</div>
+
+<div class="fldctu">
+<h3>Codes</h3>
+<p>In option F, if Qualifier is BLOC and Data Source Scheme is not present, Indicator must contain one of the following codes <span class="ecs"> (Error code(s): <a href="publications/usgf_20180720/3.0?topic=ecknn.htm" class="ecode">K22</a>)</span>:</p>
+<table border="0" cellpadding="5" width="100%" class="codestable">
+<tbody><tr valign="top">
+<td width="13%"><p>BLCH</p></td>
+<td width="20%"><p>Block Trade Child</p></td>
+<td width="67%"><p>Transaction is a block trade child.</p></td>
+</tr>
+<tr valign="top">
+<td><p>BLPA</p></td>
+<td><p>Block Trade Parent</p></td>
+<td><p>Transaction is a block trade parent.</p></td>
+</tr>
+</tbody></table>
+
+
+</div>
+
+<div class="fldctu">
+<h3>Codes</h3>
+<p>In option F, if Qualifier is REST and Data Source Scheme is not present, Indicator must contain one of the following codes <span class="ecs"> (Error code(s): <a href="publications/usgf_20180720/3.0?topic=ecknn.htm" class="ecode">K22</a>)</span>:</p>
+<table border="0" cellpadding="5" width="100%" class="codestable">
+<tbody><tr valign="top">
+<td width="13%"><p>144A</p></td>
+<td width="20%"><p>Pursuant to 144A</p></td>
+<td width="67%"><p>Ownership or transfer of an unregistered security issued, pursuant to US legal restrictions 144A.</p></td>
+</tr>
+<tr valign="top">
+<td><p>NRST</p></td>
+<td><p>Not Subject to Restrictions</p></td>
+<td><p>Ownership or transfer of a security that is not subject to restrictions.</p></td>
+</tr>
+<tr valign="top">
+<td><p>RSTR</p></td>
+<td><p>Subject to Restrictions (not pursuant to 144A)</p></td>
+<td><p>Ownership or transfer of a security that is subject to restrictions, and not pursuant to 144A.</p></td>
+</tr>
+</tbody></table>
+
+
+</div>
+
+<div class="fldctu">
+<h3>Codes</h3>
+<p>In option F, if Qualifier is SETS and Data Source Scheme is not present, Indicator must contain one of the following codes <span class="ecs"> (Error code(s): <a href="publications/usgf_20180720/3.0?topic=ecknn.htm" class="ecode">K22</a>)</span>:</p>
+<table border="0" cellpadding="5" width="100%" class="codestable">
+<tbody><tr valign="top">
+<td width="13%"><p>NSET</p></td>
+<td width="20%"><p>Default Settlement System/Method</p></td>
+<td width="67%"><p>Settle through the default settlement system/method. If there is a standing instruction in place for settlement through the alternate settlement system/method, then this standing instruction is to be ignored.</p></td>
+</tr>
+<tr valign="top">
+<td><p>YSET</p></td>
+<td><p>Alternate Settlement System/Method</p></td>
+<td><p>Settle through the alternate settlement system/method. If there is a standing instruction in place for settlement through the default settlement system/method, then this standing instruction is to be ignored.</p></td>
+</tr>
+</tbody></table>
+
+
+</div>
+
+<div class="fldctu">
+<h3>Codes</h3>
+<p>In option F, if Qualifier is NETT and Data Source Scheme is not present, Indicator must contain one of the following codes <span class="ecs"> (Error code(s): <a href="publications/usgf_20180720/3.0?topic=ecknn.htm" class="ecode">K22</a>)</span>:</p>
+<table border="0" cellpadding="5" width="100%" class="codestable">
+<tbody><tr valign="top">
+<td width="13%"><p>NNET</p></td>
+<td width="20%"><p>Not Netting Eligible</p></td>
+<td width="67%"><p>Settlement instruction is not eligible for netting.</p></td>
+</tr>
+<tr valign="top">
+<td><p>YNET</p></td>
+<td><p>Netting Eligible</p></td>
+<td><p>Settlement instruction is eligible for netting.</p></td>
+</tr>
+</tbody></table>
+
+
+</div>
+
+<div class="fldctu">
+<h3>Codes</h3>
+<p>In option F, if Qualifier is CCPT and Data Source Scheme is not present, Indicator must contain one of the following codes <span class="ecs"> (Error code(s): <a href="publications/usgf_20180720/3.0?topic=ecknn.htm" class="ecode">K22</a>)</span>:</p>
+<table border="0" cellpadding="5" width="100%" class="codestable">
+<tbody><tr valign="top">
+<td width="13%"><p>NCCP</p></td>
+<td width="20%"><p>Not CCP Eligible</p></td>
+<td width="67%"><p>Settlement instruction is not CCP eligible.</p></td>
+</tr>
+<tr valign="top">
+<td><p>YCCP</p></td>
+<td><p>CCP Eligible</p></td>
+<td><p>Settlement instruction is CCP eligible.</p></td>
+</tr>
+</tbody></table>
+
+
+</div>
+
+<div class="fldctu">
+<h3>Codes</h3>
+<p>In option F, if Qualifier is LEOG and Data Source Scheme is not present, Indicator must contain one of the following codes <span class="ecs"> (Error code(s): <a href="publications/usgf_20180720/3.0?topic=ecknn.htm" class="ecode">K22</a>)</span>:</p>
+<table border="0" cellpadding="5" width="100%" class="codestable">
+<tbody><tr valign="top">
+<td width="13%"><p>NLEG</p></td>
+<td width="20%"><p>Letter of Guarantee Not Accepted</p></td>
+<td width="67%"><p>Letter of guarantee is not accepted. If there is a standing instruction in place to accept a letter of guarantee, then this standing instruction is to be ignored.</p></td>
+</tr>
+<tr valign="top">
+<td><p>YLEG</p></td>
+<td><p>Letter of Guarantee Accepted</p></td>
+<td><p>Letter of guarantee is accepted. If there is a standing instruction in place not to accept a letter of guarantee, then this standing instruction is to be ignored.</p></td>
+</tr>
+</tbody></table>
+
+
+</div>
+
+<div class="fldctu">
+<h3>Codes</h3>
+<p>In option F, if Qualifier is COLA and Data Source Scheme is not present, Indicator must contain one of the following codes <span class="ecs"> (Error code(s): <a href="publications/usgf_20180720/3.0?topic=ecknn.htm" class="ecode">K22</a>)</span>:</p>
+<table border="0" cellpadding="5" width="100%" class="codestable">
+<tbody><tr valign="top">
+<td width="13%"><p>BFWD</p></td>
+<td width="20%"><p>Bond Forward</p></td>
+<td width="67%"><p>Any securities traded out beyond 3 days which include treasury notes, JGBs and Gilts.</p></td>
+</tr>
+<tr valign="top">
+<td><p>CCIR</p></td>
+<td><p>Cross Currency IRS</p></td>
+<td><p>Cross Currency Interest Rate Swap, indicating the exchange of fixed interest payments in one currency for those in another.</p></td>
+</tr>
+<tr valign="top">
+<td><p>CCPC</p></td>
+<td><p>CCP Collateral</p></td>
+<td><p>Collateral covering the initial margin requirements for OTC trades cleared through a CCP.</p></td>
+</tr>
+<tr valign="top">
+<td><p>COMM</p></td>
+<td><p>Commodities</p></td>
+<td><p>Commodities trades for example futures and options on gold, silver, wheat.</p></td>
+</tr>
+<tr valign="top">
+<td><p>CRDS</p></td>
+<td><p>Credit Default Swap</p></td>
+<td><p>Trading of credit default swap.</p></td>
+</tr>
+<tr valign="top">
+<td><p>CRPR</p></td>
+<td><p>Cross Product</p></td>
+<td><p>Combination of various types of trades.</p></td>
+</tr>
+<tr valign="top">
+<td><p>CRSP</p></td>
+<td><p>Credit Support</p></td>
+<td><p>Cash lending/borrowing; letter of Credit; signing of master agreement.</p></td>
+</tr>
+<tr valign="top">
+<td><p>CRTL</p></td>
+<td><p>Credit Line</p></td>
+<td><p>Opening of a credit line before trading.</p></td>
+</tr>
+<tr valign="top">
+<td><p>EQPT</p></td>
+<td><p>Equity Option</p></td>
+<td><p>Trading of equity option (Also known as stock options).</p></td>
+</tr>
+<tr valign="top">
+<td><p>EQUS</p></td>
+<td><p>Equity Swap</p></td>
+<td><p>Equity swap trades where the return of an equity is exchanged for either a fixed or a floating rate of interest.</p></td>
+</tr>
+<tr valign="top">
+<td><p>EXPT</p></td>
+<td><p>Exotic Option</p></td>
+<td><p>Trading of exotic option for example a non-standard option.</p></td>
+</tr>
+<tr valign="top">
+<td><p>EXTD</p></td>
+<td><p>Exchange Traded Derivatives</p></td>
+<td><p>Trading of exchanged traded derivatives in general (Opposite to Over the Counter (OTC)).</p></td>
+</tr>
+<tr valign="top">
+<td><p>FIXI</p></td>
+<td><p>Fixed Income</p></td>
+<td><p>Trading of fixed income instruments.</p></td>
+</tr>
+<tr valign="top">
+<td><p>FORW</p></td>
+<td><p>Forward Foreign Exchange</p></td>
+<td><p>FX trades with a value date in the future.</p></td>
+</tr>
+<tr valign="top">
+<td><p>FORX</p></td>
+<td><p>Foreign Exchange</p></td>
+<td><p>FX trades in general.</p></td>
+</tr>
+<tr valign="top">
+<td><p>FUTR</p></td>
+<td><p>Futures</p></td>
+<td><p>Related to futures trading activity.</p></td>
+</tr>
+<tr valign="top">
+<td><p>LIQU</p></td>
+<td><p>Liquidity</p></td>
+<td><p>In support of settlement via an RTGS or other clearing system.</p></td>
+</tr>
+<tr valign="top">
+<td><p>OPTN</p></td>
+<td><p>FX Option</p></td>
+<td><p>Trading of option on Foreign Exchange.</p></td>
+</tr>
+<tr valign="top">
+<td><p>OTCD</p></td>
+<td><p>OTC Derivatives</p></td>
+<td><p>Over-the-counter (OTC) Derivatives in general for example contracts which are traded and privately negotiated.</p></td>
+</tr>
+<tr valign="top">
+<td><p>PAYM</p></td>
+<td><p>Cash Settlement</p></td>
+<td><p>In support of any type of cash settlement.</p></td>
+</tr>
+<tr valign="top">
+<td><p>REPO</p></td>
+<td><p>Repurchase Agreement</p></td>
+<td><p>In support of a repurchase agreement transaction.</p></td>
+</tr>
+<tr valign="top">
+<td><p>RVPO</p></td>
+<td><p>Reverse Repurchase Agreement</p></td>
+<td><p>In support of a reverse repurchase agreement transaction.</p></td>
+</tr>
+<tr valign="top">
+<td><p>SBSB</p></td>
+<td><p>Securities Buy Sell Back</p></td>
+<td><p>Securities buy sell back.</p></td>
+</tr>
+<tr valign="top">
+<td><p>SCIE</p></td>
+<td><p>Single Currency IRS Exotic</p></td>
+<td><p>Exotic single currency interest rate swap.</p></td>
+</tr>
+<tr valign="top">
+<td><p>SCIR</p></td>
+<td><p>Single Currency IRS</p></td>
+<td><p>Single Currency Interest Rate Swap.</p></td>
+</tr>
+<tr valign="top">
+<td><p>SCRP</p></td>
+<td><p>Securities Cross Product</p></td>
+<td><p>Combination of securities-related exposure types.</p></td>
+</tr>
+<tr valign="top">
+<td><p>SHSL</p></td>
+<td><p>Short Sale</p></td>
+<td><p>Short sale exposure.</p></td>
+</tr>
+<tr valign="top">
+<td><p>SLEB</p></td>
+<td><p>Securities Lending and Borrowing</p></td>
+<td><p>Securities lending and borrowing.</p></td>
+</tr>
+<tr valign="top">
+<td><p>SLOA</p></td>
+<td><p>Secured Loan</p></td>
+<td><p>Secured loan.</p></td>
+</tr>
+<tr valign="top">
+<td><p>SWPT</p></td>
+<td><p>Swaption</p></td>
+<td><p>Option on interest rate swap.</p></td>
+</tr>
+<tr valign="top">
+<td><p>TBAS</p></td>
+<td><p>To Be Announced</p></td>
+<td><p>To Be Announced (TBA) related collateral.</p></td>
+</tr>
+<tr valign="top">
+<td><p>TCRP</p></td>
+<td><p>Treasury Cross Product</p></td>
+<td><p>Combination of treasury-related exposure types.</p></td>
+</tr>
+</tbody></table>
+
+
+</div>
+
+<div class="fldctu">
+<h3>Codes</h3>
+<p>In option F, if Qualifier is COLE and Data Source Scheme is not present, Indicator must contain one of the following codes <span class="ecs"> (Error code(s): <a href="publications/usgf_20180720/3.0?topic=ecknn.htm" class="ecode">K22</a>)</span>:</p>
+<table border="0" cellpadding="5" width="100%" class="codestable">
+<tbody><tr valign="top">
+<td width="13%"><p>COLA</p></td>
+<td width="20%"><p>Eligible for Collateral Purposes</p></td>
+<td width="67%"><p>The securities are eligible for collateral purposes.</p></td>
+</tr>
+<tr valign="top">
+<td><p>COLN</p></td>
+<td><p>Not Eligible for Collateral Purposes</p></td>
+<td><p>The securities are not eligible for collateral purposes.</p></td>
+</tr>
+</tbody></table>
+
+
+</div>
+
+<div class="fldctu">
+<h3>Codes</h3>
+<p>In option F, if Qualifier is STAM, the Data Source Scheme must be used to indicate the stamp duty type or reason, for example, in the United Kingdom and Ireland (CRST), in South Africa (STRA), etc.</p>
+</div>
+
+<div class="fldug">
+<h3>Usage Rules</h3>
+<p>The Qualifier SETR must only be used with code PREA (Preadvice) in communications between CSD/ICSD and their participants.</p><p>The conditions of the use of the codes for the qualifiers BENE, CASY, CCPT, COLA, COLE, BLOC, DBNM, FXCX, LEOG, NETT, REGT, REPT, RTGS, SETS and STCO must be pre-agreed between account owner and account servicer.</p><p>The use of settlement transaction type codes CONV, ISSU, REAL, RELE, NETT, NSYN, MKUP, MKDW, SYND is governed by the existence of a bilateral agreement.</p><p>For two leg transactions (repo, reverse repo, securities lending, securities borrowing, buy sell back, sell buy back), the status on the opening/initiation leg of the transaction will be provided by sending the below combination of Receive/Delivery Indicator (:22F::REDE) and Type of Settlement Transaction (:22F::SETR):</p>
+<table border="1" cellpadding="5" width="100%" class="simple">
+<tbody><tr valign="top">
+<th width="33%"><p>Two leg transaction</p></th>
+<th width="33%"><p>Receive/Delivery Indicator</p></th>
+<th width="33%"><p>Type of Settlement Transaction</p></th>
+</tr>
+<tr valign="top">
+<td width="33%"><p>Repo opening</p></td>
+<td width="33%"><p>DELI</p></td>
+<td width="33%"><p>REPU</p></td>
+</tr>
+<tr valign="top">
+<td><p>Reverse repo opening</p></td>
+<td><p>RECE</p></td>
+<td><p>RVPO</p></td>
+</tr>
+<tr valign="top">
+<td><p>Triparty repo opening</p></td>
+<td><p>DELI</p></td>
+<td><p>TRPO</p></td>
+</tr>
+<tr valign="top">
+<td><p>Triparty reverse repo opening</p></td>
+<td><p>RECE</p></td>
+<td><p>TRVO</p></td>
+</tr>
+<tr valign="top">
+<td><p>Securities lending initiation</p></td>
+<td><p>DELI</p></td>
+<td><p>SECL</p></td>
+</tr>
+<tr valign="top">
+<td><p>Securities borrowing initiation</p></td>
+<td><p>RECE</p></td>
+<td><p>SECB</p></td>
+</tr>
+<tr valign="top">
+<td><p>Sell-buy back: sell</p></td>
+<td><p>DELI</p></td>
+<td><p>SBBK</p></td>
+</tr>
+<tr valign="top">
+<td><p>Buy-sell back: buy</p></td>
+<td><p>RECE</p></td>
+<td><p>BSBK</p></td>
+</tr>
+<tr valign="top">
+<td><p>Collateral (giver) out: initiation</p></td>
+<td><p>DELI</p></td>
+<td><p>COLO</p></td>
+</tr>
+<tr valign="top">
+<td><p>Collateral (taker) in: initiation</p></td>
+<td><p>RECE</p></td>
+<td><p>COLI</p></td>
+</tr>
+</tbody></table>
+
+<p>The status on the closing/return leg of the transaction will be provided by sending the below combination of Receive/Delivery Indicator (:22F::REDE) and Type of Settlement Transaction (:22F::SETR):</p>
+<table border="1" cellpadding="5" width="100%" class="simple">
+<tbody><tr valign="top">
+<th width="33%"><p>Two leg transaction</p></th>
+<th width="33%"><p>Receive/Delivery Indicator</p></th>
+<th width="33%"><p>Type of Settlement Transaction</p></th>
+</tr>
+<tr valign="top">
+<td width="33%"><p>Repo closing</p></td>
+<td width="33%"><p>RECE</p></td>
+<td width="33%"><p>REPU</p></td>
+</tr>
+<tr valign="top">
+<td><p>Reverse repo closing</p></td>
+<td><p>DELI</p></td>
+<td><p>RVPO</p></td>
+</tr>
+<tr valign="top">
+<td><p>Triparty repo closing</p></td>
+<td><p>RECE</p></td>
+<td><p>TRPO</p></td>
+</tr>
+<tr valign="top">
+<td><p>Triparty reverse repo closing</p></td>
+<td><p>DELI</p></td>
+<td><p>TRVO</p></td>
+</tr>
+<tr valign="top">
+<td><p>Securities lending return</p></td>
+<td><p>RECE</p></td>
+<td><p>SECL</p></td>
+</tr>
+<tr valign="top">
+<td><p>Securities borrowing return</p></td>
+<td><p>DELI</p></td>
+<td><p>SECB</p></td>
+</tr>
+<tr valign="top">
+<td><p>Sell-buy back: buy back</p></td>
+<td><p>RECE</p></td>
+<td><p>SBBK</p></td>
+</tr>
+<tr valign="top">
+<td><p>Buy-sell back: sell back</p></td>
+<td><p>DELI</p></td>
+<td><p>BSBK</p></td>
+</tr>
+<tr valign="top">
+<td><p>Collateral (giver) out: return</p></td>
+<td><p>RECE</p></td>
+<td><p>COLO</p></td>
+</tr>
+<tr valign="top">
+<td><p>Collateral (taker) in: return</p></td>
+<td><p>DELI</p></td>
+<td><p>COLI</p></td>
+</tr>
+</tbody></table>
+
+
+</div>
+
+</div>
+
+</div>
