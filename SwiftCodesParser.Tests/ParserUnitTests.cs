@@ -4,6 +4,7 @@ using System.Text;
 
 using NUnit.Framework;
 using SwiftCodesParser.Parse;
+using SwiftCodesParser.Persist;
 
 namespace SwiftCodesParser.Tests
 {
@@ -13,18 +14,36 @@ namespace SwiftCodesParser.Tests
         private const string TestFilesFolder = "test-files";
 
         [TestCase("MT548-22-Indicator.html")]
-        public void TestParseFile(string fileName)
+        public void ParseHtml(string file)
         {
-            var path = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, TestFilesFolder, fileName);
+            var path = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, TestFilesFolder, file);
 
             string html;
-            using (StreamReader reader = new StreamReader(path, Encoding.UTF8))
+            using (var reader = new StreamReader(path, Encoding.UTF8))
             {
                 html = reader.ReadToEnd();
             }
 
             var parser = new Parser();
             var codes = parser.ParseHtmlToCodeDescriptors(html);
+        }
+
+        [TestCase("MT548-22-Indicator.html", "Swift-Codes-MT548-22-Indicator.sql")]
+        public void ParseAndWriteFile(string htmlFile, string sqlFile)
+        {
+            var htmlPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, TestFilesFolder, htmlFile);
+            var sqlPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, TestFilesFolder, sqlFile);
+
+            string html;
+            using (var reader = new StreamReader(htmlPath, Encoding.UTF8))
+            {
+                html = reader.ReadToEnd();
+            }
+
+            var parser = new Parser();          
+            var writer = new DataWriter();
+            writer.WriteSqlToFile(parser.ParseHtmlToCodeDescriptors(html), sqlPath);
+
         }
     }
 }

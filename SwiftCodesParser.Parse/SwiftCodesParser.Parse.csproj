@@ -51,14 +51,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DataWriter.cs" />
     <Compile Include="Parser.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SwiftCodeDescriptor.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\SwiftCodesParser\SwiftCodesParser.csproj">
+    <ProjectReference Include="..\SwiftCodesParser\SwiftCodesParser.Console.csproj">
       <Project>{91ecb2fa-873f-4c62-9d5a-96d6faddd9bc}</Project>
-      <Name>SwiftCodesParser</Name>
+      <Name>SwiftCodesParser.Console</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

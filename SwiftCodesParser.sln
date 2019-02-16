@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26430.6
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SwiftCodesParser", "SwiftCodesParser\SwiftCodesParser.csproj", "{91ECB2FA-873F-4C62-9D5A-96D6FADDD9BC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SwiftCodesParser.Console", "SwiftCodesParser\SwiftCodesParser.Console.csproj", "{91ECB2FA-873F-4C62-9D5A-96D6FADDD9BC}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SwiftCodesParser.Tests", "SwiftCodesParser.Tests\SwiftCodesParser.Tests.csproj", "{F5D1D8E4-D1ED-48A1-9E5F-4146C5F6B5A8}"
 EndProject

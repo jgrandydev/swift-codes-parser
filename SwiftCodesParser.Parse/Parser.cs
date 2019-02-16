@@ -50,23 +50,19 @@ namespace SwiftCodesParser.Parse
 
         public IEnumerable<SwiftCodeDescriptor> ExtractCodes(AngleSharp.Html.Dom.IHtmlDocument doc, string qualifier)
         {
-            var codes = new List<SwiftCodeDescriptor>();
-
             var trs = doc.All.Where(m => m.LocalName == "tr" && m.HasAttribute("valign") && m.HasChildNodes && m.ChildElementCount == 3);
 
             foreach (var tr in trs)
             {
-                codes.Add(new SwiftCodeDescriptor()
+                yield return new SwiftCodeDescriptor
                 {
                     Code = tr.Children[0].TextContent,
                     Definition = tr.Children[1].TextContent,
                     Description = tr.Children[2].TextContent,
                     IsQualifier = qualifier == null,
                     Qualifier = qualifier
-                });
+                };
             }
-
-            return codes;
         }
 
     }
