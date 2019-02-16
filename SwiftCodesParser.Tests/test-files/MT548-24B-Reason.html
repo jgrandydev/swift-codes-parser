@@ -1,0 +1,1897 @@
+<div class="main">
+<div class="fldblock">
+<h2>MT&nbsp;548: (12) Field 24B: Reason Code</h2>
+
+<div class="fldfmt">
+<h3>Format</h3>
+
+<table border="0" cellpadding="5" width="100%" class="format formattable">
+<tbody><tr valign="top">
+<td width="20%">Option B</td>
+<td width="30%">:4!c/[8c]/4!c</td>
+<td width="50%">(Qualifier)(Data Source Scheme)(Reason Code)</td>
+</tr>
+</tbody></table>
+
+
+</div>
+
+<div class="fldpres">
+<h3>Presence</h3>
+<p>Mandatory in optional subsequence A2a</p>
+</div>
+
+<div class="fldqual">
+<h3>Qualifier</h3>
+<p><span class="ecs"> (Error code(s): <a href="publications/usgf_20180720/3.0?topic=ect89.htm" class="ecode">T89</a>)</span></p>
+<table border="1" cellpadding="5" width="100%" class="qualifiertab">
+<tbody><tr valign="top">
+<th width="10%"><p>Order</p></th>
+<th width="8%"><p>M/O</p></th>
+<th width="13%"><p>Qualifier</p></th>
+<th width="7%"><p>R/N</p></th>
+<th width="8%"><p>CR</p></th>
+<th width="10%"><p>Options</p></th>
+<th width="43%"><p>Qualifier Description</p></th>
+</tr>
+<tr valign="top">
+<td width="10%"><p>1</p></td>
+<td width="8%"><p>M</p></td>
+<td width="13%"><p>CAND</p></td>
+<td width="7%"><p>N</p></td>
+<td width="8%"><p>C6</p></td>
+<td width="10%"><p>B</p></td>
+<td width="43%"><p>Cancellation Reason</p></td>
+</tr>
+<tr valign="top">
+<td><p>&nbsp;</p></td>
+<td><p>or</p></td>
+<td><p>CANP</p></td>
+<td><p>N</p></td>
+<td><p>C6</p></td>
+<td><p>B</p></td>
+<td><p>Pending Cancellation Reason</p></td>
+</tr>
+<tr valign="top">
+<td><p>&nbsp;</p></td>
+<td><p>or</p></td>
+<td><p>CACK</p></td>
+<td><p>N</p></td>
+<td><p>C6</p></td>
+<td><p>B</p></td>
+<td><p>Repo Call Acknowledgement Reason</p></td>
+</tr>
+<tr valign="top">
+<td><p>&nbsp;</p></td>
+<td><p>or</p></td>
+<td><p>CGEN</p></td>
+<td><p>N</p></td>
+<td><p>C6</p></td>
+<td><p>B</p></td>
+<td><p>Generated Reason</p></td>
+</tr>
+<tr valign="top">
+<td><p>&nbsp;</p></td>
+<td><p>or</p></td>
+<td><p>DEND</p></td>
+<td><p>N</p></td>
+<td><p>C6</p></td>
+<td><p>B</p></td>
+<td><p>Denied Reason</p></td>
+</tr>
+<tr valign="top">
+<td><p>&nbsp;</p></td>
+<td><p>or</p></td>
+<td><p>MOPN</p></td>
+<td><p>N</p></td>
+<td><p>C6</p></td>
+<td><p>B</p></td>
+<td><p>Pending Modification Reason</p></td>
+</tr>
+<tr valign="top">
+<td><p>&nbsp;</p></td>
+<td><p>or</p></td>
+<td><p>NMAT</p></td>
+<td><p>N</p></td>
+<td><p>C6</p></td>
+<td><p>B</p></td>
+<td><p>Unmatched Reason</p></td>
+</tr>
+<tr valign="top">
+<td><p>&nbsp;</p></td>
+<td><p>or</p></td>
+<td><p>PACK</p></td>
+<td><p>N</p></td>
+<td><p>C6</p></td>
+<td><p>B</p></td>
+<td><p>Acknowledged/Accepted Reason</p></td>
+</tr>
+<tr valign="top">
+<td><p>&nbsp;</p></td>
+<td><p>or</p></td>
+<td><p>PEND</p></td>
+<td><p>N</p></td>
+<td><p>C6</p></td>
+<td><p>B</p></td>
+<td><p>Pending Reason</p></td>
+</tr>
+<tr valign="top">
+<td><p>&nbsp;</p></td>
+<td><p>or</p></td>
+<td><p>PENF</p></td>
+<td><p>N</p></td>
+<td><p>C6</p></td>
+<td><p>B</p></td>
+<td><p>Pending/Failing Reason</p></td>
+</tr>
+<tr valign="top">
+<td><p>&nbsp;</p></td>
+<td><p>or</p></td>
+<td><p>PPRC</p></td>
+<td><p>N</p></td>
+<td><p>C6</p></td>
+<td><p>B</p></td>
+<td><p>Pending Processing Reason</p></td>
+</tr>
+<tr valign="top">
+<td><p>&nbsp;</p></td>
+<td><p>or</p></td>
+<td><p>REJT</p></td>
+<td><p>N</p></td>
+<td><p>C6</p></td>
+<td><p>B</p></td>
+<td><p>Rejection Reason</p></td>
+</tr>
+<tr valign="top">
+<td><p>&nbsp;</p></td>
+<td><p>or</p></td>
+<td><p>REPR</p></td>
+<td><p>N</p></td>
+<td><p>C6</p></td>
+<td><p>B</p></td>
+<td><p>Repair Reason</p></td>
+</tr>
+</tbody></table>
+
+
+</div>
+
+<div class="flddfn">
+<h3>Definition</h3>
+<p>This qualified generic field specifies:</p>
+<table border="0" cellpadding="5" width="100%" class="qualifierdefinitiontab">
+<tbody><tr valign="top">
+<td width="13%"><p>CACK</p></td>
+<td width="20%"><p>Repo Call Acknowledgement Reason</p></td>
+<td width="67%"><p>Specifies additional information on the repo call request acknowledgement.</p></td>
+</tr>
+<tr valign="top">
+<td><p>CAND</p></td>
+<td><p>Cancellation Reason</p></td>
+<td><p>Specifies the reason why the instruction is cancelled.</p></td>
+</tr>
+<tr valign="top">
+<td><p>CANP</p></td>
+<td><p>Pending Cancellation Reason</p></td>
+<td><p>Specifies the reason why a cancellation request sent for the related instruction is pending.</p></td>
+</tr>
+<tr valign="top">
+<td><p>CGEN</p></td>
+<td><p>Generated Reason</p></td>
+<td><p>Specifies the reason why the transaction was generated.</p></td>
+</tr>
+<tr valign="top">
+<td><p>DEND</p></td>
+<td><p>Denied Reason</p></td>
+<td><p>Specifies the reason why the request was denied.</p></td>
+</tr>
+<tr valign="top">
+<td><p>MOPN</p></td>
+<td><p>Pending Modification Reason</p></td>
+<td><p>Specifies the reason why the modification request is pending.</p></td>
+</tr>
+<tr valign="top">
+<td><p>NMAT</p></td>
+<td><p>Unmatched Reason</p></td>
+<td><p>Specifies the reason why the instruction has an unmatched status.</p></td>
+</tr>
+<tr valign="top">
+<td><p>PACK</p></td>
+<td><p>Acknowledged/Accepted Reason</p></td>
+<td><p>Specifies additional information about the processed instruction.</p></td>
+</tr>
+<tr valign="top">
+<td><p>PEND</p></td>
+<td><p>Pending Reason</p></td>
+<td><p>Specifies the reason why the instruction has a pending status.</p></td>
+</tr>
+<tr valign="top">
+<td><p>PENF</p></td>
+<td><p>Pending/Failing Reason</p></td>
+<td><p>Specifies the reason why the instruction has a failing settlement status.</p></td>
+</tr>
+<tr valign="top">
+<td><p>PPRC</p></td>
+<td><p>Pending Processing Reason</p></td>
+<td><p>Specifies the reason why the instruction has a pending processing status.</p></td>
+</tr>
+<tr valign="top">
+<td><p>REJT</p></td>
+<td><p>Rejection Reason</p></td>
+<td><p>Specifies the reason why the instruction/request has a rejected status.</p></td>
+</tr>
+<tr valign="top">
+<td><p>REPR</p></td>
+<td><p>Repair Reason</p></td>
+<td><p>Specifies the reason why the instruction is in repair.</p></td>
+</tr>
+</tbody></table>
+
+
+</div>
+
+<div class="fldctu">
+<h3>Codes</h3>
+<p>If Qualifier is CAND and Data Source Scheme is not present, Reason Code must contain one of the following codes <span class="ecs"> (Error code(s): <a href="publications/usgf_20180720/3.0?topic=ecknn.htm" class="ecode">K24</a>)</span>:</p>
+<table border="0" cellpadding="5" width="100%" class="codestable">
+<tbody><tr valign="top">
+<td width="13%"><p>CANI</p></td>
+<td width="20%"><p>Cancelled By Yourselves</p></td>
+<td width="67%"><p>Instruction has been cancelled as per your request.</p></td>
+</tr>
+<tr valign="top">
+<td><p>CANS</p></td>
+<td><p>Cancelled By System</p></td>
+<td><p>Instruction has been cancelled by the settlement system.</p></td>
+</tr>
+<tr valign="top">
+<td><p>CANT</p></td>
+<td><p>Cancelled due to Transformation</p></td>
+<td><p>Original instruction has been cancelled and replaced due to a Corporate Action.</p></td>
+</tr>
+<tr valign="top">
+<td><p>CANZ</p></td>
+<td><p>Cancelled due to Split/Partial Settlement</p></td>
+<td><p>Original instruction has been cancelled and replaced to allow a partial or split settlement.</p></td>
+</tr>
+<tr valign="top">
+<td><p>CORP</p></td>
+<td><p>Cancelled Due to Corporate Action</p></td>
+<td><p>Instruction has been cancelled due to a corporate action.</p></td>
+</tr>
+<tr valign="top">
+<td><p>CSUB</p></td>
+<td><p>Cancelled By Agent</p></td>
+<td><p>Instruction has been cancelled by the agent.</p></td>
+</tr>
+<tr valign="top">
+<td><p>CTHP</p></td>
+<td><p>Cancelled By Third Party</p></td>
+<td><p>Instruction has been cancelled by a third party.</p></td>
+</tr>
+<tr valign="top">
+<td><p>EXPI</p></td>
+<td><p>Expired</p></td>
+<td><p>Instruction has expired.</p></td>
+</tr>
+<tr valign="top">
+<td><p>NARR</p></td>
+<td><p>Narrative Reason</p></td>
+<td><p>See narrative field for reason.</p></td>
+</tr>
+<tr valign="top">
+<td><p>SCEX</p></td>
+<td><p>Securities No Longer Eligible</p></td>
+<td><p>Instruction has been cancelled; the security no longer exists or is no longer eligible on the market instructed. For corporate action-related cancellation, CORP should be used.</p></td>
+</tr>
+</tbody></table>
+
+
+</div>
+
+<div class="fldctu">
+<h3>Codes</h3>
+<p>If Qualifier is CANP and Data Source Scheme is not present, Reason Code must contain one of the following codes <span class="ecs"> (Error code(s): <a href="publications/usgf_20180720/3.0?topic=ecknn.htm" class="ecode">K24</a>)</span>:</p>
+<table border="0" cellpadding="5" width="100%" class="codestable">
+<tbody><tr valign="top">
+<td width="13%"><p>ADEA</p></td>
+<td width="20%"><p>Account Servicer Deadline Missed</p></td>
+<td width="67%"><p>Instruction was received after the account servicer's deadline. Processed on best effort basis.</p></td>
+</tr>
+<tr valign="top">
+<td><p>CDAC</p></td>
+<td><p>Conditional Delivery Cancellation Pending</p></td>
+<td><p>Conditional Delivery is still pending awaiting the cancellation from at least another party.</p></td>
+</tr>
+<tr valign="top">
+<td><p>CONF</p></td>
+<td><p>Awaiting Confirmation</p></td>
+<td><p>Awaiting confirmation of cancellation from the counterparty.</p></td>
+</tr>
+<tr valign="top">
+<td><p>INBC</p></td>
+<td><p>Incomplete Number Count</p></td>
+<td><p>Not all the instructions part of a pool have been received.</p></td>
+</tr>
+<tr valign="top">
+<td><p>NARR</p></td>
+<td><p>Narrative Reason</p></td>
+<td><p>See narrative field for reason.</p></td>
+</tr>
+</tbody></table>
+
+
+</div>
+
+<div class="fldctu">
+<h3>Codes</h3>
+<p>If Qualifier is CACK and Data Source Scheme is not present, Reason Code must contain one of the following codes <span class="ecs"> (Error code(s): <a href="publications/usgf_20180720/3.0?topic=ecknn.htm" class="ecode">K24</a>)</span>:</p>
+<table border="0" cellpadding="5" width="100%" class="codestable">
+<tbody><tr valign="top">
+<td width="13%"><p>ADEA</p></td>
+<td width="20%"><p>Account Servicer Deadline Missed</p></td>
+<td width="67%"><p>Instruction was received after the account servicer's deadline. Processed on best effort basis.</p></td>
+</tr>
+<tr valign="top">
+<td><p>CALD</p></td>
+<td><p>In Process</p></td>
+<td><p>Repo call is in process.</p></td>
+</tr>
+<tr valign="top">
+<td><p>CALP</p></td>
+<td><p>Processed</p></td>
+<td><p>Repo call is processed.</p></td>
+</tr>
+</tbody></table>
+
+
+</div>
+
+<div class="fldctu">
+<h3>Codes</h3>
+<p>If Qualifier is CGEN and Data Source Scheme is not present, Reason Code must contain one of the following codes <span class="ecs"> (Error code(s): <a href="publications/usgf_20180720/3.0?topic=ecknn.htm" class="ecode">K24</a>)</span>:</p>
+<table border="0" cellpadding="5" width="100%" class="codestable">
+<tbody><tr valign="top">
+<td width="13%"><p>CLAI</p></td>
+<td width="20%"><p>Market Claim</p></td>
+<td width="67%"><p>Transaction has been generated due to a market claim following a corporate action.</p></td>
+</tr>
+<tr valign="top">
+<td><p>COLL</p></td>
+<td><p>Collateral Management</p></td>
+<td><p>Transaction has been generated for collateral management purposes.</p></td>
+</tr>
+<tr valign="top">
+<td><p>NARR</p></td>
+<td><p>Narrative Reason</p></td>
+<td><p>See narrative field for reason.</p></td>
+</tr>
+<tr valign="top">
+<td><p>RODE</p></td>
+<td><p>Return of Refused Dump</p></td>
+<td><p>Transaction has been generated to return a delivery previously instructed.</p></td>
+</tr>
+<tr valign="top">
+<td><p>SPLI</p></td>
+<td><p>Split/Shaping</p></td>
+<td><p>Transaction has been generated to enable settlement following a shortage of position.</p></td>
+</tr>
+<tr valign="top">
+<td><p>THRD</p></td>
+<td><p>Third Party</p></td>
+<td><p>Transaction has been generated by a third party, for example, a central counterparty.</p></td>
+</tr>
+<tr valign="top">
+<td><p>TRAN</p></td>
+<td><p>Transformation</p></td>
+<td><p>Transaction has been generated due to transformation following a corporate action.</p></td>
+</tr>
+</tbody></table>
+
+
+</div>
+
+<div class="fldctu">
+<h3>Codes</h3>
+<p>If Qualifier is DEND and Data Source Scheme is not present, Reason Code must contain one of the following codes <span class="ecs"> (Error code(s): <a href="publications/usgf_20180720/3.0?topic=ecknn.htm" class="ecode">K24</a>)</span>:</p>
+<table border="0" cellpadding="5" width="100%" class="codestable">
+<tbody><tr valign="top">
+<td width="13%"><p>ADEA</p></td>
+<td width="20%"><p>Account Servicer Deadline Missed</p></td>
+<td width="67%"><p>Instruction was received after the account servicer's deadline.</p></td>
+</tr>
+<tr valign="top">
+<td><p>DCAL</p></td>
+<td><p>Call Denied Since Already Applied</p></td>
+<td><p>Repo call request was denied since another call already applies.</p></td>
+</tr>
+<tr valign="top">
+<td><p>DCAN</p></td>
+<td><p>Denied Since Cancelled</p></td>
+<td><p>Request was denied since the instruction has been cancelled.</p></td>
+</tr>
+<tr valign="top">
+<td><p>DFOR</p></td>
+<td><p>Denied Since not Allowed</p></td>
+<td><p>Repo call request was denied. Call not allowed on the concerned repo, for example, out of delay.</p></td>
+</tr>
+<tr valign="top">
+<td><p>DPRG</p></td>
+<td><p>Denied Since in Progress</p></td>
+<td><p>Request was denied because the process of settlement is in progress.</p></td>
+</tr>
+<tr valign="top">
+<td><p>DREP</p></td>
+<td><p>Denied Since Repo Ended</p></td>
+<td><p>Request was denied because the repo was cancelled.</p></td>
+</tr>
+<tr valign="top">
+<td><p>DSET</p></td>
+<td><p>Denied Since Settled</p></td>
+<td><p>Request was denied because the instruction was settled.</p></td>
+</tr>
+<tr valign="top">
+<td><p>LATE</p></td>
+<td><p>Market Deadline Missed</p></td>
+<td><p>Instruction was received after market deadline.</p></td>
+</tr>
+<tr valign="top">
+<td><p>NARR</p></td>
+<td><p>Narrative Reason</p></td>
+<td><p>See narrative field for reason.</p></td>
+</tr>
+</tbody></table>
+
+
+</div>
+
+<div class="fldctu">
+<h3>Codes</h3>
+<p>If Qualifier is MOPN and Data Source Scheme is not present, Reason Code must contain one of the following codes <span class="ecs"> (Error code(s): <a href="publications/usgf_20180720/3.0?topic=ecknn.htm" class="ecode">K24</a>)</span>:</p>
+<table border="0" cellpadding="5" width="100%" class="codestable">
+<tbody><tr valign="top">
+<td width="13%"><p>CONF</p></td>
+<td width="20%"><p>Awaiting Confirmation</p></td>
+<td width="67%"><p>Awaiting confirmation of modification from the counterparty or the market.</p></td>
+</tr>
+<tr valign="top">
+<td><p>NARR</p></td>
+<td><p>Narrative Reason</p></td>
+<td><p>See narrative field for reason.</p></td>
+</tr>
+</tbody></table>
+
+
+</div>
+
+<div class="fldctu">
+<h3>Codes</h3>
+<p>If Qualifier is NMAT and Data Source Scheme is not present, Reason Code must contain one of the following codes <span class="ecs"> (Error code(s): <a href="publications/usgf_20180720/3.0?topic=ecknn.htm" class="ecode">K24</a>)</span>:</p>
+<table border="0" cellpadding="5" width="100%" class="codestable">
+<tbody><tr valign="top">
+<td width="13%"><p>ACRU</p></td>
+<td width="20%"><p>Accrued Interest Amount</p></td>
+<td width="67%"><p>Accrued interest amount does not match.</p></td>
+</tr>
+<tr valign="top">
+<td><p>ADEA</p></td>
+<td><p>Account Servicer Deadline Missed</p></td>
+<td><p>Instruction was received after the account servicer's deadline. Processed on best effort basis.</p></td>
+</tr>
+<tr valign="top">
+<td><p>CADE</p></td>
+<td><p>Disagreement Transaction Call Delay</p></td>
+<td><p>Transaction call delay does not match.</p></td>
+</tr>
+<tr valign="top">
+<td><p>CLAT</p></td>
+<td><p>Counterparty too Late for Matching</p></td>
+<td><p>Counterparty's instruction was too late for matching.</p></td>
+</tr>
+<tr valign="top">
+<td><p>CMIS</p></td>
+<td><p>Matching Instruction Not Found</p></td>
+<td><p>A matching instruction from your counterparty could not be found.</p></td>
+</tr>
+<tr valign="top">
+<td><p>CPCA</p></td>
+<td><p>Counterparty Cancelled Instruction</p></td>
+<td><p>Counterparty cancelled their instruction.</p></td>
+</tr>
+<tr valign="top">
+<td><p>DCMX</p></td>
+<td><p>Disagreement Cum Ex</p></td>
+<td><p>Disagreement if trade was executed cum or ex.</p></td>
+</tr>
+<tr valign="top">
+<td><p>DDAT</p></td>
+<td><p>Disagreement Settlement Date</p></td>
+<td><p>Settlement date/time does not match.</p></td>
+</tr>
+<tr valign="top">
+<td><p>DDEA</p></td>
+<td><p>Disagreement Deal Price</p></td>
+<td><p>Deal price does not match.</p></td>
+</tr>
+<tr valign="top">
+<td><p>DELN</p></td>
+<td><p>Disagreement Direction of Trade</p></td>
+<td><p>Direction of the trade does not match. Counterparty expects a delivery from you, not a receipt or vice versa.</p></td>
+</tr>
+<tr valign="top">
+<td><p>DEPT</p></td>
+<td><p>Disagreement Place of Settlement</p></td>
+<td><p>Place of settlement does not match.</p></td>
+</tr>
+<tr valign="top">
+<td><p>DMCT</p></td>
+<td><p>Disagreement Automatic Generation</p></td>
+<td><p>Disagreement on automatic generation of market claim or transformation.</p></td>
+</tr>
+<tr valign="top">
+<td><p>DMON</p></td>
+<td><p>Disagreement Settlement Amount</p></td>
+<td><p>Settlement amount does not match.</p></td>
+</tr>
+<tr valign="top">
+<td><p>DQUA</p></td>
+<td><p>Disagreement Quantity</p></td>
+<td><p>Quantity of financial instrument does not match.</p></td>
+</tr>
+<tr valign="top">
+<td><p>DSEC</p></td>
+<td><p>Disagreement Security</p></td>
+<td><p>Financial instrument identification does not match, for example, ISIN differs, Financial Instrument Attributes differs.</p></td>
+</tr>
+<tr valign="top">
+<td><p>DTRA</p></td>
+<td><p>Not Recognised</p></td>
+<td><p>Counterparty has been contacted or contacted us, and does not recognise the transaction.</p></td>
+</tr>
+<tr valign="top">
+<td><p>DTRD</p></td>
+<td><p>Disagreement Trade Date</p></td>
+<td><p>Trade date does not match.</p></td>
+</tr>
+<tr valign="top">
+<td><p>FORF</p></td>
+<td><p>Disagreement Forfeit Amount</p></td>
+<td><p>Forfeit amount does not match.</p></td>
+</tr>
+<tr valign="top">
+<td><p>FRAP</p></td>
+<td><p>Disagreement Payment Code</p></td>
+<td><p>Payment type does not match: your instruction is free of payment, your counterparty's instruction is against payment or vice versa.</p></td>
+</tr>
+<tr valign="top">
+<td><p>ICAG</p></td>
+<td><p>Incorrect Agent</p></td>
+<td><p>Delivering or receiving agent (counterparty) does not match.</p></td>
+</tr>
+<tr valign="top">
+<td><p>ICUS</p></td>
+<td><p>Disagreement Receiving or Delivering Custodian</p></td>
+<td><p>Delivering or receiving custodian does not match.</p></td>
+</tr>
+<tr valign="top">
+<td><p>IEXE</p></td>
+<td><p>Incorrect Buyer or Seller</p></td>
+<td><p>Buyer (receiver) or seller (deliverer) does not match.</p></td>
+</tr>
+<tr valign="top">
+<td><p>IIND</p></td>
+<td><p>Disagreement Common Reference</p></td>
+<td><p>Common reference does not match.</p></td>
+</tr>
+<tr valign="top">
+<td><p>INPS</p></td>
+<td><p>Disagreement Place of Safekeeping</p></td>
+<td><p>The place of safekeeping information does not allow matching to take place.</p></td>
+</tr>
+<tr valign="top">
+<td><p>INVE</p></td>
+<td><p>Disagreement Investor Party</p></td>
+<td><p>Investor party does not match.</p></td>
+</tr>
+<tr valign="top">
+<td><p>LATE</p></td>
+<td><p>Market Deadline Missed</p></td>
+<td><p>Instruction was received after market deadline.</p></td>
+</tr>
+<tr valign="top">
+<td><p>LEOG</p></td>
+<td><p>Disagreement Letter of Guarantee Indicator</p></td>
+<td><p>Counterparty is for settlement through Letter of Guarantee (L/G), your instruction is not, or vice versa.</p></td>
+</tr>
+<tr valign="top">
+<td><p>MIME</p></td>
+<td><p>Missing Market Side Details</p></td>
+<td><p>Market side execution details are missing.</p></td>
+</tr>
+<tr valign="top">
+<td><p>NARR</p></td>
+<td><p>Narrative Reason</p></td>
+<td><p>See narrative for details.</p></td>
+</tr>
+<tr valign="top">
+<td><p>NCRR</p></td>
+<td><p>Disagreement Currency Settlement Amount</p></td>
+<td><p>Settlement amount currency does not match.</p></td>
+</tr>
+<tr valign="top">
+<td><p>NMAS</p></td>
+<td><p>No Matching Started</p></td>
+<td><p>Matching process has not yet started.</p></td>
+</tr>
+<tr valign="top">
+<td><p>PHYS</p></td>
+<td><p>Disagreement Physical Settlement</p></td>
+<td><p>Counterparty's instruction is physical settlement, your instruction is not, or vice versa.</p></td>
+</tr>
+<tr valign="top">
+<td><p>PLCE</p></td>
+<td><p>Disagreement Place of Trade</p></td>
+<td><p>Place of trade does not match.</p></td>
+</tr>
+<tr valign="top">
+<td><p>PLIS</p></td>
+<td><p>Disagreement Place of Listing</p></td>
+<td><p>Place of listing does not match.</p></td>
+</tr>
+<tr valign="top">
+<td><p>PODU</p></td>
+<td><p>Possible Duplicate Instruction</p></td>
+<td><p>Instruction has not been matched. It is a possible duplicate instruction.</p></td>
+</tr>
+<tr valign="top">
+<td><p>REGD</p></td>
+<td><p>Disagreement Registration Details</p></td>
+<td><p>Registration details linked to the transaction are incorrect.</p></td>
+</tr>
+<tr valign="top">
+<td><p>REPA</p></td>
+<td><p>Disagreement Termination Transaction Amount</p></td>
+<td><p>Termination transaction amount does not match.</p></td>
+</tr>
+<tr valign="top">
+<td><p>REPO</p></td>
+<td><p>Disagreement Repurchase Rate</p></td>
+<td><p>Repurchase rate does not match.</p></td>
+</tr>
+<tr valign="top">
+<td><p>REPP</p></td>
+<td><p>Disagreement Premium Amount</p></td>
+<td><p>Premium amount does not match.</p></td>
+</tr>
+<tr valign="top">
+<td><p>RERT</p></td>
+<td><p>Disagreement Repurchase Rate Type</p></td>
+<td><p>Repurchase rate type does not match.</p></td>
+</tr>
+<tr valign="top">
+<td><p>RTGS</p></td>
+<td><p>Disagreement RTGS System</p></td>
+<td><p>Counterparty is for Real Time Gross Settlement (RTGS) system, you are for non-RTGS or vice versa.</p></td>
+</tr>
+<tr valign="top">
+<td><p>SAFE</p></td>
+<td><p>Disagreement Safekeeping Account</p></td>
+<td><p>Safekeeping account used as matching criteria on the market concerned does not match. This includes Buyer/seller's account, direct client's account at the receiving/delivering agent, or receiving/delivering agent's account at the CSD.</p></td>
+</tr>
+<tr valign="top">
+<td><p>SETR</p></td>
+<td><p>Disagreement Settlement Transaction</p></td>
+<td><p>Settlement transaction type does not match (relates to the settlement transaction type codes available for sequence E field 22F, qualifier SETR).</p></td>
+</tr>
+<tr valign="top">
+<td><p>SETS</p></td>
+<td><p>Disagreement Settlement System/Method</p></td>
+<td><p>Settlement system/method does not match (for example, instruction is to settle using settlement system/method A. Counterparty expects settlement to occur using settlement system/method B).</p></td>
+</tr>
+<tr valign="top">
+<td><p>TERM</p></td>
+<td><p>Disagreement Closing Date/Time</p></td>
+<td><p>Closing date/time does not match.</p></td>
+</tr>
+<tr valign="top">
+<td><p>TXST</p></td>
+<td><p>Disagreement Tax Status</p></td>
+<td><p>Disagreement on the tax status of the financial instruments to be settled.</p></td>
+</tr>
+<tr valign="top">
+<td><p>UNBR</p></td>
+<td><p>Unmatched Market Side Details</p></td>
+<td><p>Market side trade is unmatched.</p></td>
+</tr>
+<tr valign="top">
+<td><p>VASU</p></td>
+<td><p>Disagreement Variable Rate Support</p></td>
+<td><p>Variable rate support does not match (repo).</p></td>
+</tr>
+</tbody></table>
+
+
+</div>
+
+<div class="fldctu">
+<h3>Codes</h3>
+<p>If Qualifier is PACK and Data Source Scheme is not present, Reason Code must contain one of the following codes <span class="ecs"> (Error code(s): <a href="publications/usgf_20180720/3.0?topic=ecknn.htm" class="ecode">K24</a>)</span>:</p>
+<table border="0" cellpadding="5" width="100%" class="codestable">
+<tbody><tr valign="top">
+<td width="13%"><p>ADEA</p></td>
+<td width="20%"><p>Account Servicer Deadline Missed</p></td>
+<td width="67%"><p>Instruction was received after the account servicer's deadline. Processed on best effort basis.</p></td>
+</tr>
+<tr valign="top">
+<td><p>NARR</p></td>
+<td><p>Narrative Reason</p></td>
+<td><p>See narrative field for reason.</p></td>
+</tr>
+<tr valign="top">
+<td><p>SMPG</p></td>
+<td><p>Market Practice Rule Discrepancy</p></td>
+<td><p>Instruction is accepted but does not comply with the market practice rule published for the concerned market or process.</p></td>
+</tr>
+</tbody></table>
+
+
+</div>
+
+<div class="fldctu">
+<h3>Codes</h3>
+<p>If Qualifier is PEND and Data Source Scheme is not present, Reason Code must contain one of the following codes <span class="ecs"> (Error code(s): <a href="publications/usgf_20180720/3.0?topic=ecknn.htm" class="ecode">K24</a>)</span>:</p>
+<table border="0" cellpadding="5" width="100%" class="codestable">
+<tbody><tr valign="top">
+<td width="13%"><p>ADEA</p></td>
+<td width="20%"><p>Account Servicer Deadline Missed</p></td>
+<td width="67%"><p>Instruction was received after the account servicer's deadline. Processed on best effort basis.</p></td>
+</tr>
+<tr valign="top">
+<td><p>AWMO</p></td>
+<td><p>Awaiting Money</p></td>
+<td><p>Financial instruments are delivered, but still awaiting money from the counterparty.</p></td>
+</tr>
+<tr valign="top">
+<td><p>AWSH</p></td>
+<td><p>Awaiting Securities from Counterparty</p></td>
+<td><p>Financial instruments have not yet been received from the counterparty.</p></td>
+</tr>
+<tr valign="top">
+<td><p>BATC</p></td>
+<td><p>Processing Batch Difference</p></td>
+<td><p>Processing batch differs in the counterparty's instruction, for example, daytime/real-time versus overnight.</p></td>
+</tr>
+<tr valign="top">
+<td><p>BENO</p></td>
+<td><p>Beneficial Ownership Disagreement</p></td>
+<td><p>Disagreement in beneficial ownership.</p></td>
+</tr>
+<tr valign="top">
+<td><p>BLOC</p></td>
+<td><p>Account Blocked</p></td>
+<td><p>Your account is blocked, no instruction can settle over the account.</p></td>
+</tr>
+<tr valign="top">
+<td><p>BOTH</p></td>
+<td><p>Both Instructions on Hold</p></td>
+<td><p>Counterparty's instruction and your instruction are on hold/frozen/in a preadvice mode.</p></td>
+</tr>
+<tr valign="top">
+<td><p>CAIS</p></td>
+<td><p>Awaiting Securities</p></td>
+<td><p>Awaiting financial instruments from a corporate action issue or other procedure, for example, conversion, dematerialisation, exchange, registration, stamping, splitting.</p></td>
+</tr>
+<tr valign="top">
+<td><p>CDLR</p></td>
+<td><p>Conditional Delivery Awaiting Release</p></td>
+<td><p>Instruction is in a hold/frozen/preadvice mode - infrastructure platform is awaiting release.</p></td>
+</tr>
+<tr valign="top">
+<td><p>CERT</p></td>
+<td><p>Wrong Certificate Numbers</p></td>
+<td><p>Certificate number error.</p></td>
+</tr>
+<tr valign="top">
+<td><p>CHAS</p></td>
+<td><p>Enquiry Sent</p></td>
+<td><p>A chaser/enquiry has been sent.</p></td>
+</tr>
+<tr valign="top">
+<td><p>CLAC</p></td>
+<td><p>Counterparty Insufficient Securities</p></td>
+<td><p>Insufficient deliverable financial instruments in counterparty's account or counterparty does not hold financial instruments.</p></td>
+</tr>
+<tr valign="top">
+<td><p>CLHT</p></td>
+<td><p>Clearing House Trade</p></td>
+<td><p>Instructed settlement date does not agree with the settlement date on the Clearing House trade, that is, a specific type of trade in India.</p></td>
+</tr>
+<tr valign="top">
+<td><p>CMON</p></td>
+<td><p>Counterparty Insufficient Money</p></td>
+<td><p>Insufficient money in counterparty's account.</p></td>
+</tr>
+<tr valign="top">
+<td><p>COLL</p></td>
+<td><p>Securities Pledged as Collateral</p></td>
+<td><p>Financial instruments are not deliverable as they are pledged as collateral.</p></td>
+</tr>
+<tr valign="top">
+<td><p>CPEC</p></td>
+<td><p>Counterparty In Receivership</p></td>
+<td><p>Counterparty is in receivership (form of bankruptcy where a court appointed person, the receiver, manages the affairs of the business).</p></td>
+</tr>
+<tr valign="top">
+<td><p>CSDH</p></td>
+<td><p>CSD Hold</p></td>
+<td><p>Central securities depository has set the instruction in a hold/frozen/preadvice mode.</p></td>
+</tr>
+<tr valign="top">
+<td><p>CVAL</p></td>
+<td><p>CSD Validation</p></td>
+<td><p>Instruction is in a hold/frozen/preadvice mode as it fulfils predefined conditions of a restriction processing type in the market infrastructure platform.</p></td>
+</tr>
+<tr valign="top">
+<td><p>CYCL</p></td>
+<td><p>Awaiting Next Settlement Cycle</p></td>
+<td><p>Instruction is confirmed in the local market or is ready for settlement, awaiting next settlement cycle.</p></td>
+</tr>
+<tr valign="top">
+<td><p>DENO</p></td>
+<td><p>Unavailable Deliverable Denominated Quantity</p></td>
+<td><p>Quantity instructed does not match the denomination available/deliverable. Physical securities need to be obtained in deliverable denominated quantities.</p></td>
+</tr>
+<tr valign="top">
+<td><p>DEPO</p></td>
+<td><p>Refused Deposit for Issue of Depositary Receipts</p></td>
+<td><p>Deposit of shares for the issuing of depositary receipts has been refused. The allotment for depositary receipts granted by the issuer is exceeded by your transaction.</p></td>
+</tr>
+<tr valign="top">
+<td><p>DISA</p></td>
+<td><p>Natural Disaster</p></td>
+<td><p>Exceptional closing of all financial institutions due to natural disaster, for example, earthquake.</p></td>
+</tr>
+<tr valign="top">
+<td><p>DKNY</p></td>
+<td><p>Counterparty Returned Shares</p></td>
+<td><p>Counterparty has returned or refuses the securities.</p></td>
+</tr>
+<tr valign="top">
+<td><p>DOCC</p></td>
+<td><p>Awaiting Documents/Registration Instruction/Endorsements from Counterparty</p></td>
+<td><p>Awaiting documents, registration instruction or endorsements from counterparty.</p></td>
+</tr>
+<tr valign="top">
+<td><p>DOCY</p></td>
+<td><p>Awaiting Documents/Registration Instruction/Endorsements from You</p></td>
+<td><p>Awaiting documents, registration instruction or endorsements from you.</p></td>
+</tr>
+<tr valign="top">
+<td><p>FLIM</p></td>
+<td><p>Maximum Foreign Limit Reached</p></td>
+<td><p>Insufficient deliverable financial instruments in your account as maximum foreign limit has been reached.</p></td>
+</tr>
+<tr valign="top">
+<td><p>FROZ</p></td>
+<td><p>Securities Frozen At CSD</p></td>
+<td><p>Financial instruments are blocked at the CSD following a corporate event.</p></td>
+</tr>
+<tr valign="top">
+<td><p>FUTU</p></td>
+<td><p>Awaiting Settlement Date</p></td>
+<td><p>Awaiting settlement date. No settlement problems to be reported.</p></td>
+</tr>
+<tr valign="top">
+<td><p>GLOB</p></td>
+<td><p>Global Form Securities</p></td>
+<td><p>Settlement cannot be executed; financial instruments are in global form.</p></td>
+</tr>
+<tr valign="top">
+<td><p>IAAD</p></td>
+<td><p>Status Reason Investigation</p></td>
+<td><p>Pending reason being investigated.</p></td>
+</tr>
+<tr valign="top">
+<td><p>INBC</p></td>
+<td><p>Incomplete Number Count</p></td>
+<td><p>Not all the instructions part of a pool have been received.</p></td>
+</tr>
+<tr valign="top">
+<td><p>INCA</p></td>
+<td><p>Income Adjustment Required</p></td>
+<td><p>Financial instruments require income adjustment, for example, dividend or interest.</p></td>
+</tr>
+<tr valign="top">
+<td><p>LAAW</p></td>
+<td><p>Awaiting Other Transaction</p></td>
+<td><p>Awaiting settlement of a purchase to cover failing positions.</p></td>
+</tr>
+<tr valign="top">
+<td><p>LACK</p></td>
+<td><p>Lack of Securities</p></td>
+<td><p>Insufficient financial instruments in your account.</p></td>
+</tr>
+<tr valign="top">
+<td><p>LALO</p></td>
+<td><p>Securities are Loaned Out</p></td>
+<td><p>Financial instruments are out on loan.</p></td>
+</tr>
+<tr valign="top">
+<td><p>LATE</p></td>
+<td><p>Market Deadline Missed</p></td>
+<td><p>Instruction was received after market deadline.</p></td>
+</tr>
+<tr valign="top">
+<td><p>LINK</p></td>
+<td><p>Pending Linked Instruction</p></td>
+<td><p>Your instruction is pending settlement because the instruction linked to it is pending.</p></td>
+</tr>
+<tr valign="top">
+<td><p>LIQU</p></td>
+<td><p>Insufficient Central Bank Liquidity</p></td>
+<td><p>Central Bank Liquidity is insufficient.</p></td>
+</tr>
+<tr valign="top">
+<td><p>MINO</p></td>
+<td><p>Minimum Settlement Quantity</p></td>
+<td><p>Quantity instructed is lower than the minimum existing settlement quantity for the financial instrument.</p></td>
+</tr>
+<tr valign="top">
+<td><p>MONY</p></td>
+<td><p>Insufficient Money</p></td>
+<td><p>Insufficient money in your account and/or credit line is insufficient.</p></td>
+</tr>
+<tr valign="top">
+<td><p>MUNO</p></td>
+<td><p>Multiple Settlement Quantity</p></td>
+<td><p>Quantity instructed is not a multiple of an existing settlement quantity lot for the financial instrument.</p></td>
+</tr>
+<tr valign="top">
+<td><p>NARR</p></td>
+<td><p>Narrative Reason</p></td>
+<td><p>See narrative field for reason.</p></td>
+</tr>
+<tr valign="top">
+<td><p>NCON</p></td>
+<td><p>Confirmation Not Received</p></td>
+<td><p>Confirmation of settlement has not yet been received.</p></td>
+</tr>
+<tr valign="top">
+<td><p>NEWI</p></td>
+<td><p>New Issues</p></td>
+<td><p>Financial instrument is a new issue and not yet available/tradable.</p></td>
+</tr>
+<tr valign="top">
+<td><p>NMAS</p></td>
+<td><p>No Matching Required</p></td>
+<td><p>Instruction has not been matched; matching process is not required.</p></td>
+</tr>
+<tr valign="top">
+<td><p>NOFX</p></td>
+<td><p>No Foreign Exchange Instruction</p></td>
+<td><p>A foreign exchange instruction from you is missing.</p></td>
+</tr>
+<tr valign="top">
+<td><p>PART</p></td>
+<td><p>Trade Settles in Partials</p></td>
+<td><p>Trade will settle in partials.</p></td>
+</tr>
+<tr valign="top">
+<td><p>PHCK</p></td>
+<td><p>Physical Securities in Verification Process</p></td>
+<td><p>Physical financial instruments have been received and are being checked for authenticity.</p></td>
+</tr>
+<tr valign="top">
+<td><p>PHSE</p></td>
+<td><p>Physical Delivery Delay</p></td>
+<td><p>Settlement is physical. Financial instruments are being delivered.</p></td>
+</tr>
+<tr valign="top">
+<td><p>PRCY</p></td>
+<td><p>Counterparty Instruction on Hold</p></td>
+<td><p>Counterparty's instruction is on hold/frozen/in a preadvice mode.</p></td>
+</tr>
+<tr valign="top">
+<td><p>PREA</p></td>
+<td><p>Your Instruction on Hold</p></td>
+<td><p>Your instruction is on hold/frozen/in a preadvice mode.</p></td>
+</tr>
+<tr valign="top">
+<td><p>PRSY</p></td>
+<td><p>On Hold by System</p></td>
+<td><p>The transaction was put on hold by the system.</p></td>
+</tr>
+<tr valign="top">
+<td><p>REFS</p></td>
+<td><p>Not In Good Order</p></td>
+<td><p>Delivery/receipt was refused because physical financial instruments are not in good order.</p></td>
+</tr>
+<tr valign="top">
+<td><p>REFU</p></td>
+<td><p>Instruction Refused/Not Recognised</p></td>
+<td><p>Instruction has been refused or not recognised and is represented automatically.</p></td>
+</tr>
+<tr valign="top">
+<td><p>REGT</p></td>
+<td><p>Certificates Rejected</p></td>
+<td><p>Certificates have been lodged with the registrar but rejected due to incomplete documentation or foreign ownership limitation reached.</p></td>
+</tr>
+<tr valign="top">
+<td><p>SBLO</p></td>
+<td><p>Securities Blocked</p></td>
+<td><p>Financial instruments are blocked due to a corporate action event, realignment, etc.</p></td>
+</tr>
+<tr valign="top">
+<td><p>SDUT</p></td>
+<td><p>Lack of Stamp Duty Information</p></td>
+<td><p>Stamp duty information is missing.</p></td>
+</tr>
+<tr valign="top">
+<td><p>SETS</p></td>
+<td><p>Settlement System/Method Modified</p></td>
+<td><p>Settlement system/method has been modified at CSD to allow settlement.</p></td>
+</tr>
+<tr valign="top">
+<td><p>TAMM</p></td>
+<td><p>Trade Amended in Market</p></td>
+<td><p>Trade is being amended in the market.</p></td>
+</tr>
+<tr valign="top">
+<td><p>YCOL</p></td>
+<td><p>Collateral Shortage</p></td>
+<td><p>Insufficient collateral in your account to execute the instruction.</p></td>
+</tr>
+</tbody></table>
+
+
+</div>
+
+<div class="fldctu">
+<h3>Codes</h3>
+<p>If Qualifier is PENF and Data Source Scheme is not present, Reason Code must contain one of the following codes <span class="ecs"> (Error code(s): <a href="publications/usgf_20180720/3.0?topic=ecknn.htm" class="ecode">K24</a>)</span>:</p>
+<table border="0" cellpadding="5" width="100%" class="codestable">
+<tbody><tr valign="top">
+<td width="13%"><p>ADEA</p></td>
+<td width="20%"><p>Account Servicer Deadline Missed</p></td>
+<td width="67%"><p>Instruction was received after the account servicer's deadline. Processed on best effort basis.</p></td>
+</tr>
+<tr valign="top">
+<td><p>AWMO</p></td>
+<td><p>Awaiting Money</p></td>
+<td><p>Financial instruments are delivered, but still awaiting money from the counterparty.</p></td>
+</tr>
+<tr valign="top">
+<td><p>AWSH</p></td>
+<td><p>Awaiting Securities from Counterparty</p></td>
+<td><p>Financial instruments have not yet been received from the counterparty (if receive against payment), the money has been delivered.</p></td>
+</tr>
+<tr valign="top">
+<td><p>BATC</p></td>
+<td><p>Processing Batch Difference</p></td>
+<td><p>Processing batch differs in the counterparty's instruction, for example, daytime/real-time versus overnight.</p></td>
+</tr>
+<tr valign="top">
+<td><p>BENO</p></td>
+<td><p>Beneficial Ownership Disagreement</p></td>
+<td><p>Disagreement in beneficial ownership.</p></td>
+</tr>
+<tr valign="top">
+<td><p>BLOC</p></td>
+<td><p>Account Blocked</p></td>
+<td><p>Your account is blocked, no instruction can settle over the account.</p></td>
+</tr>
+<tr valign="top">
+<td><p>BOTH</p></td>
+<td><p>Both Instructions on Hold</p></td>
+<td><p>Counterparty's instruction and your instruction are on hold/frozen/in a preadvice mode.</p></td>
+</tr>
+<tr valign="top">
+<td><p>BYIY</p></td>
+<td><p>Buy-in Procedure</p></td>
+<td><p>A buy-in procedure has started on the market (on your behalf if your instruction is a receipt, by the counterparty if your instruction is a delivery).</p></td>
+</tr>
+<tr valign="top">
+<td><p>CAIS</p></td>
+<td><p>Awaiting Securities</p></td>
+<td><p>Awaiting financial instruments from a corporate action issue or other procedure, for example, conversion, dematerialisation, exchange, registration, stamping, splitting.</p></td>
+</tr>
+<tr valign="top">
+<td><p>CANR</p></td>
+<td><p>Cancellation/Confirmation Request</p></td>
+<td><p>A cancellation or confirmation of instruction is required.</p></td>
+</tr>
+<tr valign="top">
+<td><p>CDLR</p></td>
+<td><p>Conditional Delivery Awaiting Release</p></td>
+<td><p>Instruction is in a hold/frozen/preadvice mode - infrastructure platform is awaiting release.</p></td>
+</tr>
+<tr valign="top">
+<td><p>CERT</p></td>
+<td><p>Wrong Certificate Numbers</p></td>
+<td><p>Certificate number error.</p></td>
+</tr>
+<tr valign="top">
+<td><p>CHAS</p></td>
+<td><p>Enquiry Sent</p></td>
+<td><p>A chaser/enquiry has been sent.</p></td>
+</tr>
+<tr valign="top">
+<td><p>CLAC</p></td>
+<td><p>Counterparty Insufficient Securities</p></td>
+<td><p>Insufficient deliverable financial instruments in counterparty's account or counterparty does not hold financial instruments.</p></td>
+</tr>
+<tr valign="top">
+<td><p>CLAT</p></td>
+<td><p>Counterparty too Late for Settlement</p></td>
+<td><p>Counterparty's instruction was too late for settlement (that is received too late, matching or settlement problems solved too late).</p></td>
+</tr>
+<tr valign="top">
+<td><p>CLHT</p></td>
+<td><p>Clearing House Trade</p></td>
+<td><p>Instructed settlement date does not agree with the settlement date on the Clearing House trade, that is, a specific type of trade in India.</p></td>
+</tr>
+<tr valign="top">
+<td><p>CMON</p></td>
+<td><p>Counterparty Insufficient Money</p></td>
+<td><p>Insufficient money in counterparty's account.</p></td>
+</tr>
+<tr valign="top">
+<td><p>COLL</p></td>
+<td><p>Securities Pledged as Collateral</p></td>
+<td><p>Financial instruments are not deliverable as they are pledged as collateral.</p></td>
+</tr>
+<tr valign="top">
+<td><p>CPEC</p></td>
+<td><p>Counterparty In Receivership</p></td>
+<td><p>Counterparty is in receivership (form of bankruptcy where a court appointed person, the receiver, manages the affairs of the business).</p></td>
+</tr>
+<tr valign="top">
+<td><p>CSDH</p></td>
+<td><p>CSD Hold</p></td>
+<td><p>Central securities depository has set the instruction in a hold/frozen/preadvice mode.</p></td>
+</tr>
+<tr valign="top">
+<td><p>CVAL</p></td>
+<td><p>CSD Validation</p></td>
+<td><p>Instruction is in a hold/frozen/preadvice mode as it fulfils predefined conditions of a restriction processing type in the market infrastructure platform.</p></td>
+</tr>
+<tr valign="top">
+<td><p>CYCL</p></td>
+<td><p>Awaiting Next Settlement Cycle</p></td>
+<td><p>Instruction is confirmed in the local market or is ready for settlement, awaiting next settlement cycle.</p></td>
+</tr>
+<tr valign="top">
+<td><p>DENO</p></td>
+<td><p>Unavailable Deliverable Denominated Quantity</p></td>
+<td><p>Quantity instructed does not match the denomination available/deliverable. Physical financial instruments need to be obtained in deliverable denominated quantities.</p></td>
+</tr>
+<tr valign="top">
+<td><p>DEPO</p></td>
+<td><p>Refused Deposit for Issue of Depositary Receipts</p></td>
+<td><p>Deposit of shares for the issuing of depositary receipts has been refused. The allotment granted by the issuer is exceeded by your transaction.</p></td>
+</tr>
+<tr valign="top">
+<td><p>DISA</p></td>
+<td><p>Natural Disaster</p></td>
+<td><p>Exceptional closing of all financial institutions due to natural disaster, for example, typhoon, flooding, earthquake, hurricane.</p></td>
+</tr>
+<tr valign="top">
+<td><p>DKNY</p></td>
+<td><p>Counterparty Returned Shares</p></td>
+<td><p>Counterparty has returned or refused the financial instruments.</p></td>
+</tr>
+<tr valign="top">
+<td><p>DOCC</p></td>
+<td><p>Awaiting Documents/Registration Instruction/Endorsements from Counterparty</p></td>
+<td><p>Awaiting documents, registration instruction or endorsements from counterparty.</p></td>
+</tr>
+<tr valign="top">
+<td><p>DOCY</p></td>
+<td><p>Awaiting Documents/Registration Instruction/Endorsements from You</p></td>
+<td><p>Awaiting documents, registration instruction or endorsements from you.</p></td>
+</tr>
+<tr valign="top">
+<td><p>FLIM</p></td>
+<td><p>Maximum Foreign Limit Reached</p></td>
+<td><p>Insufficient deliverable financial instruments in your account as maximum foreign limit has been reached.</p></td>
+</tr>
+<tr valign="top">
+<td><p>FROZ</p></td>
+<td><p>Securities Frozen At CSD</p></td>
+<td><p>Financial instruments are blocked at the CSD following a corporate event.</p></td>
+</tr>
+<tr valign="top">
+<td><p>GLOB</p></td>
+<td><p>Global Form Securities</p></td>
+<td><p>Settlement cannot be executed; financial instruments are in global form.</p></td>
+</tr>
+<tr valign="top">
+<td><p>IAAD</p></td>
+<td><p>Status Reason Investigation</p></td>
+<td><p>Failing reason being investigated.</p></td>
+</tr>
+<tr valign="top">
+<td><p>INBC</p></td>
+<td><p>Incomplete Number Count</p></td>
+<td><p>Not all the instructions part of a pool have been received.</p></td>
+</tr>
+<tr valign="top">
+<td><p>INCA</p></td>
+<td><p>Income Adjustment Required</p></td>
+<td><p>Financial instruments require income adjustment, for example, dividend or interest.</p></td>
+</tr>
+<tr valign="top">
+<td><p>LAAW</p></td>
+<td><p>Awaiting Other Transaction</p></td>
+<td><p>Awaiting settlement of a purchase to cover failing positions.</p></td>
+</tr>
+<tr valign="top">
+<td><p>LACK</p></td>
+<td><p>Lack of Securities</p></td>
+<td><p>Insufficient deliverable financial instruments in your account.</p></td>
+</tr>
+<tr valign="top">
+<td><p>LALO</p></td>
+<td><p>Securities are Loaned Out</p></td>
+<td><p>Financial instruments are out on loan.</p></td>
+</tr>
+<tr valign="top">
+<td><p>LATE</p></td>
+<td><p>Market Deadline Missed</p></td>
+<td><p>Instruction was received after market deadline.</p></td>
+</tr>
+<tr valign="top">
+<td><p>LINK</p></td>
+<td><p>Pending Linked Instruction</p></td>
+<td><p>A linked instruction is pending/failing.</p></td>
+</tr>
+<tr valign="top">
+<td><p>LIQU</p></td>
+<td><p>Insufficient Central Bank Liquidity</p></td>
+<td><p>Central Bank Liquidity is insufficient.</p></td>
+</tr>
+<tr valign="top">
+<td><p>MINO</p></td>
+<td><p>Minimum Settlement Quantity</p></td>
+<td><p>Quantity instructed is lower than the minimum existing settlement quantity for the financial instrument.</p></td>
+</tr>
+<tr valign="top">
+<td><p>MLAT</p></td>
+<td><p>Money/Securities too Late for Settlement</p></td>
+<td><p>Covering money/financial instruments were received too late for completing settlement on a same day basis.</p></td>
+</tr>
+<tr valign="top">
+<td><p>MONY</p></td>
+<td><p>Insufficient Money</p></td>
+<td><p>Insufficient money in your account and/or credit line is insufficient.</p></td>
+</tr>
+<tr valign="top">
+<td><p>MUNO</p></td>
+<td><p>Multiple Settlement Quantity</p></td>
+<td><p>Quantity instructed is not a multiple of an existing settlement quantity lot for the financial instrument.</p></td>
+</tr>
+<tr valign="top">
+<td><p>NARR</p></td>
+<td><p>Narrative Reason</p></td>
+<td><p>See narrative field for reason.</p></td>
+</tr>
+<tr valign="top">
+<td><p>NCON</p></td>
+<td><p>Confirmation Not Received</p></td>
+<td><p>Confirmation of settlement has not yet been received.</p></td>
+</tr>
+<tr valign="top">
+<td><p>NEWI</p></td>
+<td><p>New Issues</p></td>
+<td><p>Financial instrument is a new issue and not yet available/tradable.</p></td>
+</tr>
+<tr valign="top">
+<td><p>NOFX</p></td>
+<td><p>No Foreign Exchange Instruction</p></td>
+<td><p>A foreign exchange instruction from you is missing.</p></td>
+</tr>
+<tr valign="top">
+<td><p>OBJT</p></td>
+<td><p>Under Objection</p></td>
+<td><p>Financial instruments are stolen, in dispute, under objection etc.</p></td>
+</tr>
+<tr valign="top">
+<td><p>PART</p></td>
+<td><p>Trade Settles in Partials</p></td>
+<td><p>Trade will settle in partials.</p></td>
+</tr>
+<tr valign="top">
+<td><p>PHCK</p></td>
+<td><p>Physical Securities in Verification Process</p></td>
+<td><p>Physical financial instruments have been received and are being checked for authenticity.</p></td>
+</tr>
+<tr valign="top">
+<td><p>PHSE</p></td>
+<td><p>Physical Delivery Delay</p></td>
+<td><p>Settlement is physical. Financial instruments are being delivered.</p></td>
+</tr>
+<tr valign="top">
+<td><p>PRCY</p></td>
+<td><p>Counterparty Instruction on Hold</p></td>
+<td><p>Counterparty's instruction is on hold/frozen/in a preadvice mode.</p></td>
+</tr>
+<tr valign="top">
+<td><p>PREA</p></td>
+<td><p>Your Instruction on Hold</p></td>
+<td><p>Your instruction is on hold/frozen/in a preadvice mode.</p></td>
+</tr>
+<tr valign="top">
+<td><p>PRSY</p></td>
+<td><p>On Hold by System</p></td>
+<td><p>The transaction was put on hold by the system.</p></td>
+</tr>
+<tr valign="top">
+<td><p>REFS</p></td>
+<td><p>Not In Good Order</p></td>
+<td><p>Delivery/receipt was refused because physical financial instruments are not in good order.</p></td>
+</tr>
+<tr valign="top">
+<td><p>REGT</p></td>
+<td><p>Certificates Rejected</p></td>
+<td><p>Certificates have been lodged with the registrar but rejected due to incomplete documentation or foreign ownership limitation reached.</p></td>
+</tr>
+<tr valign="top">
+<td><p>SBLO</p></td>
+<td><p>Securities Blocked</p></td>
+<td><p>Financial instruments are blocked due to a corporate action event, realignment, etc.</p></td>
+</tr>
+<tr valign="top">
+<td><p>SDUT</p></td>
+<td><p>Lack of Stamp Duty Information</p></td>
+<td><p>Stamp duty information is missing.</p></td>
+</tr>
+<tr valign="top">
+<td><p>SETS</p></td>
+<td><p>Settlement System/Method Modified</p></td>
+<td><p>Settlement system/method has been modified at CSD to allow settlement.</p></td>
+</tr>
+<tr valign="top">
+<td><p>STCD</p></td>
+<td><p>Confirmation Discrepancy</p></td>
+<td><p>Discrepancy in the settlement confirmation.</p></td>
+</tr>
+<tr valign="top">
+<td><p>YCOL</p></td>
+<td><p>Collateral Shortage</p></td>
+<td><p>Insufficient collateral in your account to execute the instruction.</p></td>
+</tr>
+</tbody></table>
+
+
+</div>
+
+<div class="fldctu">
+<h3>Codes</h3>
+<p>If Qualifier is PPRC and Data Source Scheme is not present, Reason Code must contain one of the following codes <span class="ecs"> (Error code(s): <a href="publications/usgf_20180720/3.0?topic=ecknn.htm" class="ecode">K24</a>)</span>:</p>
+<table border="0" cellpadding="5" width="100%" class="codestable">
+<tbody><tr valign="top">
+<td width="13%"><p>ADEA</p></td>
+<td width="20%"><p>Account Servicer Deadline Missed</p></td>
+<td width="67%"><p>Instruction was received after the account servicer's deadline. Processed on best effort basis.</p></td>
+</tr>
+<tr valign="top">
+<td><p>BLOC</p></td>
+<td><p>Account Blocked</p></td>
+<td><p>Your account is blocked, no instruction can settle over the account.</p></td>
+</tr>
+<tr valign="top">
+<td><p>CAIS</p></td>
+<td><p>Awaiting Securities</p></td>
+<td><p>Awaiting securities from a corporate action issue or other procedure, for example, conversion, dematerialisation, exchange, registration, stamping, splitting.</p></td>
+</tr>
+<tr valign="top">
+<td><p>CERT</p></td>
+<td><p>Wrong Certificate Numbers</p></td>
+<td><p>Certificate number error.</p></td>
+</tr>
+<tr valign="top">
+<td><p>COLL</p></td>
+<td><p>Securities Pledged as Collateral</p></td>
+<td><p>Securities are not deliverable as they are pledged as collateral.</p></td>
+</tr>
+<tr valign="top">
+<td><p>DENO</p></td>
+<td><p>Unavailable Deliverable Denominated Quantity</p></td>
+<td><p>Quantity instructed does not match the denomination available/deliverable. Physical securities need to be obtained in deliverable denominated quantities.</p></td>
+</tr>
+<tr valign="top">
+<td><p>DOCY</p></td>
+<td><p>Awaiting Documents/Registration Instruction/Endorsements from You</p></td>
+<td><p>Awaiting documents, registration instruction or endorsements from you.</p></td>
+</tr>
+<tr valign="top">
+<td><p>FLIM</p></td>
+<td><p>Maximum Foreign Limit Reached</p></td>
+<td><p>Insufficient deliverable financial instruments in your account as maximum foreign limit has been reached.</p></td>
+</tr>
+<tr valign="top">
+<td><p>GLOB</p></td>
+<td><p>Global Form Securities</p></td>
+<td><p>Settlement cannot be executed; financial instruments are in global form.</p></td>
+</tr>
+<tr valign="top">
+<td><p>LACK</p></td>
+<td><p>Lack of Securities</p></td>
+<td><p>Insufficient financial instruments in your account.</p></td>
+</tr>
+<tr valign="top">
+<td><p>LALO</p></td>
+<td><p>Securities are Loaned Out</p></td>
+<td><p>Financial instruments are out on loan.</p></td>
+</tr>
+<tr valign="top">
+<td><p>LIQU</p></td>
+<td><p>Insufficient Central Bank Liquidity</p></td>
+<td><p>Central Bank Liquidity is insufficient.</p></td>
+</tr>
+<tr valign="top">
+<td><p>MINO</p></td>
+<td><p>Minimum Settlement Quantity</p></td>
+<td><p>Quantity instructed is lower than the minimum existing settlement quantity for the financial instrument.</p></td>
+</tr>
+<tr valign="top">
+<td><p>MONY</p></td>
+<td><p>Insufficient Money</p></td>
+<td><p>Insufficient money in your account and/or credit line is insufficient.</p></td>
+</tr>
+<tr valign="top">
+<td><p>MUNO</p></td>
+<td><p>Multiple Settlement Quantity</p></td>
+<td><p>Quantity instructed is not a multiple of an existing settlement quantity lot for the financial instrument.</p></td>
+</tr>
+<tr valign="top">
+<td><p>NARR</p></td>
+<td><p>Narrative Reason</p></td>
+<td><p>See narrative field for reason.</p></td>
+</tr>
+<tr valign="top">
+<td><p>NEXT</p></td>
+<td><p>Next Process</p></td>
+<td><p>Next Process is launched. No processing pending problems to be reported.</p></td>
+</tr>
+<tr valign="top">
+<td><p>NOFX</p></td>
+<td><p>No Foreign Exchange Instruction</p></td>
+<td><p>A foreign exchange instruction from you is missing.</p></td>
+</tr>
+<tr valign="top">
+<td><p>YCOL</p></td>
+<td><p>Collateral Shortage</p></td>
+<td><p>Insufficient collateral in your account to execute the instruction.</p></td>
+</tr>
+</tbody></table>
+
+
+</div>
+
+<div class="fldctu">
+<h3>Codes</h3>
+<p>If Qualifier is REJT and Data Source Scheme is not present, Reason Code must contain one of the following codes <span class="ecs"> (Error code(s): <a href="publications/usgf_20180720/3.0?topic=ecknn.htm" class="ecode">K24</a>)</span>:</p>
+<table border="0" cellpadding="5" width="100%" class="codestable">
+<tbody><tr valign="top">
+<td width="13%"><p>ADEA</p></td>
+<td width="20%"><p>Account Servicer Deadline Missed</p></td>
+<td width="67%"><p>Instruction was received after the account servicer's deadline.</p></td>
+</tr>
+<tr valign="top">
+<td><p>BATC</p></td>
+<td><p>Processing Batch Rejection</p></td>
+<td><p>Unrecognised or invalid processing batch, that is, daytime/real-time while only possible to settle in overnight batch.</p></td>
+</tr>
+<tr valign="top">
+<td><p>CADE</p></td>
+<td><p>Transaction Call Delay Rejection</p></td>
+<td><p>Unrecognised or invalid transaction call delay.</p></td>
+</tr>
+<tr valign="top">
+<td><p>CAEV</p></td>
+<td><p>Corporate Action Rejection</p></td>
+<td><p>Corporate action pending on the financial instrument instructed.</p></td>
+</tr>
+<tr valign="top">
+<td><p>CASH</p></td>
+<td><p>Cash Account Rejection</p></td>
+<td><p>Unrecognised or invalid cash account.</p></td>
+</tr>
+<tr valign="top">
+<td><p>CASY</p></td>
+<td><p>Impossible Cash Settlement System</p></td>
+<td><p>Impossible standing arrangements override instruction for the cash settlement system.</p></td>
+</tr>
+<tr valign="top">
+<td><p>DDAT</p></td>
+<td><p>Settlement Date Rejection</p></td>
+<td><p>Unrecognised or invalid settlement date.</p></td>
+</tr>
+<tr valign="top">
+<td><p>DDEA</p></td>
+<td><p>Deal Price Rejection</p></td>
+<td><p>Unrecognised or invalid deal price.</p></td>
+</tr>
+<tr valign="top">
+<td><p>DEPT</p></td>
+<td><p>Place of Settlement Rejection</p></td>
+<td><p>Unrecognised or invalid Place of Settlement.</p></td>
+</tr>
+<tr valign="top">
+<td><p>DMON</p></td>
+<td><p>Settlement Amount Rejection</p></td>
+<td><p>Unrecognised or invalid settlement amount.</p></td>
+</tr>
+<tr valign="top">
+<td><p>DQUA</p></td>
+<td><p>Quantity Rejection</p></td>
+<td><p>Unrecognised or invalid settlement quantity.</p></td>
+</tr>
+<tr valign="top">
+<td><p>DSEC</p></td>
+<td><p>Security Rejection</p></td>
+<td><p>Unrecognised or invalid financial instrument identification.</p></td>
+</tr>
+<tr valign="top">
+<td><p>DTRD</p></td>
+<td><p>Trade Date Rejection</p></td>
+<td><p>Unrecognised or invalid trade date.</p></td>
+</tr>
+<tr valign="top">
+<td><p>ICAG</p></td>
+<td><p>Agent Rejection</p></td>
+<td><p>Unrecognised or invalid receiving or delivering agent.</p></td>
+</tr>
+<tr valign="top">
+<td><p>ICUS</p></td>
+<td><p>Receiving or Delivering Custodian Rejection</p></td>
+<td><p>Unrecognised or invalid receiving or delivering custodian.</p></td>
+</tr>
+<tr valign="top">
+<td><p>IEXE</p></td>
+<td><p>Buyer or Seller Rejection</p></td>
+<td><p>Unrecognised or invalid buyer or seller.</p></td>
+</tr>
+<tr valign="top">
+<td><p>IIND</p></td>
+<td><p>Common Reference Rejection</p></td>
+<td><p>Unrecognised, invalid or missing Common Reference.</p></td>
+</tr>
+<tr valign="top">
+<td><p>INPS</p></td>
+<td><p>Place of Safekeeping Rejection</p></td>
+<td><p>Unrecognised, invalid or missing Place of Safekeeping.</p></td>
+</tr>
+<tr valign="top">
+<td><p>INVB</p></td>
+<td><p>Balance Rejection</p></td>
+<td><p>Unrecognised, invalid or missing balance.</p></td>
+</tr>
+<tr valign="top">
+<td><p>INVE</p></td>
+<td><p>Investor Party Rejection</p></td>
+<td><p>Unrecognised or invalid investor party. May be used by an executing party to reject an instruction for an investor (or portfolio) for which it is not authorised to act.</p></td>
+</tr>
+<tr valign="top">
+<td><p>INVL</p></td>
+<td><p>Link Rejection</p></td>
+<td><p>Unrecognised, invalid or missing link.</p></td>
+</tr>
+<tr valign="top">
+<td><p>INVM</p></td>
+<td><p>Invalid Modification Request</p></td>
+<td><p>Invalid or unrecognized modification request.</p></td>
+</tr>
+<tr valign="top">
+<td><p>INVN</p></td>
+<td><p>Number Rejection</p></td>
+<td><p>Unrecognised, invalid or missing lot/sub-balance number.</p></td>
+</tr>
+<tr valign="top">
+<td><p>LATE</p></td>
+<td><p>Market or Processing Deadline Missed</p></td>
+<td><p>Instruction or processing commend was received after market or processing deadline.</p></td>
+</tr>
+<tr valign="top">
+<td><p>MINO</p></td>
+<td><p>Minimum Settlement Quantity</p></td>
+<td><p>Quantity instructed is lower than the minimum existing settlement quantity for the financial instrument.</p></td>
+</tr>
+<tr valign="top">
+<td><p>MISM</p></td>
+<td><p>Invalid Requested Message Type</p></td>
+<td><p>ONLY for SPRC status. The MT549 statement/status advice request cannot be executed. The message type requested is not valid for the message reference or statement period concerned (that is MT548 requested for a settled transaction, MT537 requested for a future statement period, etc.).</p></td>
+</tr>
+<tr valign="top">
+<td><p>MUNO</p></td>
+<td><p>Multiple Settlement Quantity</p></td>
+<td><p>Quantity instructed is not a multiple of an existing settlement quantity lot for the financial instrument.</p></td>
+</tr>
+<tr valign="top">
+<td><p>NARR</p></td>
+<td><p>Narrative Reason</p></td>
+<td><p>See narrative field for reason.</p></td>
+</tr>
+<tr valign="top">
+<td><p>NCRR</p></td>
+<td><p>Settlement Amount Currency Rejection</p></td>
+<td><p>Unrecognised or invalid settlement amount currency.</p></td>
+</tr>
+<tr valign="top">
+<td><p>NRGM</p></td>
+<td><p>No Match</p></td>
+<td><p>Cancellation or Transaction Processing Command request has been rejected since more than one instruction match to the cancellation/Transaction Processing Command criteria.</p></td>
+</tr>
+<tr valign="top">
+<td><p>NRGN</p></td>
+<td><p>Not Found</p></td>
+<td><p>Cancellation or Transaction Processing Command request has been rejected since the instruction could not be found.</p></td>
+</tr>
+<tr valign="top">
+<td><p>PHYS</p></td>
+<td><p>Physical Settlement Impossible</p></td>
+<td><p>Physical settlement is impossible for the instructed financial instrument.</p></td>
+</tr>
+<tr valign="top">
+<td><p>PLCE</p></td>
+<td><p>Place of Trade Rejection</p></td>
+<td><p>Unrecognised or invalid place of trade.</p></td>
+</tr>
+<tr valign="top">
+<td><p>PLIS</p></td>
+<td><p>Place of Listing Rejection</p></td>
+<td><p>Unrecognised or invalid place of listing. Used when the security identified is not listed on the market supplied.</p></td>
+</tr>
+<tr valign="top">
+<td><p>REFE</p></td>
+<td><p>Reference Rejection</p></td>
+<td><p>Instruction has a reference identical to another previously received instruction.</p></td>
+</tr>
+<tr valign="top">
+<td><p>REPA</p></td>
+<td><p>Termination Transaction Amount Rejection</p></td>
+<td><p>Unrecognised or invalid termination transaction amount.</p></td>
+</tr>
+<tr valign="top">
+<td><p>REPO</p></td>
+<td><p>Repurchase Rate Rejection</p></td>
+<td><p>Unrecognised or invalid repurchase rate.</p></td>
+</tr>
+<tr valign="top">
+<td><p>REPP</p></td>
+<td><p>Premium Amount Rejection</p></td>
+<td><p>Unrecognised or invalid premium amount.</p></td>
+</tr>
+<tr valign="top">
+<td><p>RTGS</p></td>
+<td><p>Impossible to use the RTGS system instructed</p></td>
+<td><p>Impossible to use the RTGS system instructed (NRTG or YRTG).</p></td>
+</tr>
+<tr valign="top">
+<td><p>SAFE</p></td>
+<td><p>Safekeeping Account Rejection</p></td>
+<td><p>Unrecognised or invalid message sender's safekeeping account.</p></td>
+</tr>
+<tr valign="top">
+<td><p>SDUT</p></td>
+<td><p>Lack of Stamp Duty Information</p></td>
+<td><p>Required stamp duty information is missing.</p></td>
+</tr>
+<tr valign="top">
+<td><p>SETR</p></td>
+<td><p>Settlement Transaction Rejection</p></td>
+<td><p>Unrecognised or invalid settlement transaction type (relates to the settlement transaction type codes available for sequence E field 22F, qualifier SETR).</p></td>
+</tr>
+<tr valign="top">
+<td><p>SETS</p></td>
+<td><p>Settlement System/Method Rejection</p></td>
+<td><p>Unrecognised or invalid settlement system/method instructed.</p></td>
+</tr>
+<tr valign="top">
+<td><p>TERM</p></td>
+<td><p>Closing Date/Time Rejection</p></td>
+<td><p>Unrecognised or invalid closing date/time.</p></td>
+</tr>
+<tr valign="top">
+<td><p>TXST</p></td>
+<td><p>Tax Status Rejection</p></td>
+<td><p>Unrecognised or invalid tax status of the securities instructed.</p></td>
+</tr>
+<tr valign="top">
+<td><p>VALR</p></td>
+<td><p>Rule Rejection</p></td>
+<td><p>Account servicer validation rule rejection.</p></td>
+</tr>
+</tbody></table>
+
+
+</div>
+
+<div class="fldctu">
+<h3>Codes</h3>
+<p>If Qualifier is REPR and Data Source Scheme is not present, Reason Code must contain one of the following codes <span class="ecs"> (Error code(s): <a href="publications/usgf_20180720/3.0?topic=ecknn.htm" class="ecode">K24</a>)</span>:</p>
+<table border="0" cellpadding="5" width="100%" class="codestable">
+<tbody><tr valign="top">
+<td width="13%"><p>BATC</p></td>
+<td width="20%"><p>Processing Batch Repair</p></td>
+<td width="67%"><p>Unrecognised or invalid processing batch, that is, daytime/real-time while only possible to settle in overnight batch.</p></td>
+</tr>
+<tr valign="top">
+<td><p>CADE</p></td>
+<td><p>Transaction Call Delay Repair</p></td>
+<td><p>Unrecognised or invalid transaction call delay.</p></td>
+</tr>
+<tr valign="top">
+<td><p>CAEV</p></td>
+<td><p>Corporate Action Repair</p></td>
+<td><p>Corporate action pending on the financial instrument instructed.</p></td>
+</tr>
+<tr valign="top">
+<td><p>CASH</p></td>
+<td><p>Cash Account Repair</p></td>
+<td><p>Unrecognised or invalid cash account.</p></td>
+</tr>
+<tr valign="top">
+<td><p>CASY</p></td>
+<td><p>Impossible Cash Settlement System</p></td>
+<td><p>Impossible standing arrangements override instruction for the cash settlement system.</p></td>
+</tr>
+<tr valign="top">
+<td><p>DDAT</p></td>
+<td><p>Settlement Date Repair</p></td>
+<td><p>Unrecognised or invalid settlement date.</p></td>
+</tr>
+<tr valign="top">
+<td><p>DDEA</p></td>
+<td><p>Deal Price Repair</p></td>
+<td><p>Unrecognised or invalid deal price.</p></td>
+</tr>
+<tr valign="top">
+<td><p>DEPT</p></td>
+<td><p>Place of Settlement Repair</p></td>
+<td><p>Unrecognised or invalid Place of Settlement.</p></td>
+</tr>
+<tr valign="top">
+<td><p>DMON</p></td>
+<td><p>Settlement Amount Repair</p></td>
+<td><p>Unrecognised or invalid settlement amount.</p></td>
+</tr>
+<tr valign="top">
+<td><p>DQUA</p></td>
+<td><p>Quantity Repair</p></td>
+<td><p>Unrecognised or invalid settlement quantity.</p></td>
+</tr>
+<tr valign="top">
+<td><p>DSEC</p></td>
+<td><p>Security Repair</p></td>
+<td><p>Unrecognised or invalid financial instrument identification.</p></td>
+</tr>
+<tr valign="top">
+<td><p>DTRD</p></td>
+<td><p>Trade Date Repair</p></td>
+<td><p>Unrecognised or invalid trade date.</p></td>
+</tr>
+<tr valign="top">
+<td><p>ICAG</p></td>
+<td><p>Agent Repair</p></td>
+<td><p>Unrecognised or invalid receiving or delivering agent.</p></td>
+</tr>
+<tr valign="top">
+<td><p>ICUS</p></td>
+<td><p>Receiving or Delivering Custodian Repair</p></td>
+<td><p>Unrecognised or invalid receiving or delivering custodian.</p></td>
+</tr>
+<tr valign="top">
+<td><p>IEXE</p></td>
+<td><p>Buyer or Seller Repair</p></td>
+<td><p>Unrecognised or invalid buyer or seller.</p></td>
+</tr>
+<tr valign="top">
+<td><p>IIND</p></td>
+<td><p>Common Reference Repair</p></td>
+<td><p>Unrecognised, invalid or missing Common Reference.</p></td>
+</tr>
+<tr valign="top">
+<td><p>INPS</p></td>
+<td><p>Place of Safekeeping Repair</p></td>
+<td><p>Unrecognised, invalid or missing Place of Safekeeping.</p></td>
+</tr>
+<tr valign="top">
+<td><p>MINO</p></td>
+<td><p>Minimum Settlement Quantity Repair</p></td>
+<td><p>Quantity instructed is lower than the minimum existing settlement quantity for the financial instrument.</p></td>
+</tr>
+<tr valign="top">
+<td><p>MUNO</p></td>
+<td><p>Multiple Settlement Quantity Repair</p></td>
+<td><p>Quantity instructed is not a multiple of an existing settlement quantity lot for the financial instrument.</p></td>
+</tr>
+<tr valign="top">
+<td><p>NARR</p></td>
+<td><p>Narrative Reason</p></td>
+<td><p>See narrative field for reason.</p></td>
+</tr>
+<tr valign="top">
+<td><p>NCRR</p></td>
+<td><p>Settlement Amount Currency Repair</p></td>
+<td><p>Unrecognised or invalid settlement amount currency.</p></td>
+</tr>
+<tr valign="top">
+<td><p>PHYS</p></td>
+<td><p>Physical Settlement Impossible</p></td>
+<td><p>Physical settlement is impossible for the instructed financial instrument.</p></td>
+</tr>
+<tr valign="top">
+<td><p>PLCE</p></td>
+<td><p>Place of Trade Repair</p></td>
+<td><p>Unrecognised or invalid place of trade.</p></td>
+</tr>
+<tr valign="top">
+<td><p>REFE</p></td>
+<td><p>Reference Repair</p></td>
+<td><p>Instruction has a reference identical to another previously received instruction.</p></td>
+</tr>
+<tr valign="top">
+<td><p>REPA</p></td>
+<td><p>Termination Transaction Amount Repair</p></td>
+<td><p>Unrecognised or invalid termination transaction amount.</p></td>
+</tr>
+<tr valign="top">
+<td><p>REPO</p></td>
+<td><p>Repurchase Rate Repair</p></td>
+<td><p>Unrecognised or invalid repurchase rate.</p></td>
+</tr>
+<tr valign="top">
+<td><p>REPP</p></td>
+<td><p>Premium Amount Repair</p></td>
+<td><p>Unrecognised or invalid premium amount.</p></td>
+</tr>
+<tr valign="top">
+<td><p>RTGS</p></td>
+<td><p>Impossible to use the RTGS system instructed</p></td>
+<td><p>Impossible to use the RTGS system instructed (NRTG or YRTG).</p></td>
+</tr>
+<tr valign="top">
+<td><p>SAFE</p></td>
+<td><p>Safekeeping Account Repair</p></td>
+<td><p>Unrecognised or invalid message sender's safekeeping account.</p></td>
+</tr>
+<tr valign="top">
+<td><p>SDUT</p></td>
+<td><p>Lack of Stamp Duty Information</p></td>
+<td><p>Required stamp duty information is missing.</p></td>
+</tr>
+<tr valign="top">
+<td><p>SETR</p></td>
+<td><p>Settlement Transaction Repair</p></td>
+<td><p>Unrecognised or invalid settlement transaction type (relates to the settlement transaction type codes available for sequence E field 22F, qualifier SETR).</p></td>
+</tr>
+<tr valign="top">
+<td><p>SETS</p></td>
+<td><p>Settlement System/Method Repair</p></td>
+<td><p>Unrecognised or invalid settlement system/method instructed.</p></td>
+</tr>
+<tr valign="top">
+<td><p>TERM</p></td>
+<td><p>Closing Date/Time Repair</p></td>
+<td><p>Unrecognised or invalid closing date/time.</p></td>
+</tr>
+<tr valign="top">
+<td><p>TXST</p></td>
+<td><p>Tax Status Repair</p></td>
+<td><p>Unrecognised or invalid tax status of the securities instructed.</p></td>
+</tr>
+</tbody></table>
+
+
+</div>
+
+<div class="fldug">
+<h3>Usage Rules</h3>
+<p>Usage of a settlement status/reason alone means that the transaction is matched (if a matching process exists in the concerned market or at the concerned account servicer).</p><p>A pending transaction (PEND) becomes a failing transaction (PENF) on the settlement date instructed in the message, during the end of day reporting.</p>
+</div>
+
+</div>
+
+</div>

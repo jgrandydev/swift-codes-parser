@@ -1,0 +1,358 @@
+<div class="main">
+<div class="fldblock">
+<h2>MT&nbsp;548: (10) Field 25D: Status Code</h2>
+
+<div class="fldfmt">
+<h3>Format</h3>
+
+<table border="0" cellpadding="5" width="100%" class="format formattable">
+<tbody><tr valign="top">
+<td width="20%">Option D</td>
+<td width="30%">:4!c/[8c]/4!c</td>
+<td width="50%">(Qualifier)(Data Source Scheme)(Status Code)</td>
+</tr>
+</tbody></table>
+
+
+</div>
+
+<div class="fldpres">
+<h3>Presence</h3>
+<p>Mandatory in mandatory subsequence A2</p>
+</div>
+
+<div class="fldqual">
+<h3>Qualifier</h3>
+<p><span class="ecs"> (Error code(s): <a href="publications/usgf_20180720/3.0?topic=ect89.htm" class="ecode">T89</a>)</span></p>
+<table border="1" cellpadding="5" width="100%" class="qualifiertab">
+<tbody><tr valign="top">
+<th width="10%"><p>Order</p></th>
+<th width="8%"><p>M/O</p></th>
+<th width="13%"><p>Qualifier</p></th>
+<th width="7%"><p>R/N</p></th>
+<th width="8%"><p>CR</p></th>
+<th width="10%"><p>Options</p></th>
+<th width="43%"><p>Qualifier Description</p></th>
+</tr>
+<tr valign="top">
+<td width="10%"><p>1</p></td>
+<td width="8%"><p>M</p></td>
+<td width="13%"><p>CPRC</p></td>
+<td width="7%"><p>N</p></td>
+<td width="8%"><p>&nbsp;</p></td>
+<td width="10%"><p>D</p></td>
+<td width="43%"><p>Cancellation Processing Status</p></td>
+</tr>
+<tr valign="top">
+<td><p>&nbsp;</p></td>
+<td><p>or</p></td>
+<td><p>IPRC</p></td>
+<td><p>N</p></td>
+<td><p>&nbsp;</p></td>
+<td><p>D</p></td>
+<td><p>Instruction Processing Status</p></td>
+</tr>
+<tr valign="top">
+<td><p>&nbsp;</p></td>
+<td><p>or</p></td>
+<td><p>MTCH</p></td>
+<td><p>N</p></td>
+<td><p>&nbsp;</p></td>
+<td><p>D</p></td>
+<td><p>Matching Status</p></td>
+</tr>
+<tr valign="top">
+<td><p>&nbsp;</p></td>
+<td><p>or</p></td>
+<td><p>SETT</p></td>
+<td><p>N</p></td>
+<td><p>&nbsp;</p></td>
+<td><p>D</p></td>
+<td><p>Settlement Status</p></td>
+</tr>
+<tr valign="top">
+<td><p>&nbsp;</p></td>
+<td><p>or</p></td>
+<td><p>SPRC</p></td>
+<td><p>N</p></td>
+<td><p>&nbsp;</p></td>
+<td><p>D</p></td>
+<td><p>Request for Statement/Status Advice Status</p></td>
+</tr>
+<tr valign="top">
+<td><p>&nbsp;</p></td>
+<td><p>or</p></td>
+<td><p>CALL</p></td>
+<td><p>N</p></td>
+<td><p>&nbsp;</p></td>
+<td><p>D</p></td>
+<td><p>Repo Call Request Status</p></td>
+</tr>
+<tr valign="top">
+<td><p>&nbsp;</p></td>
+<td><p>or</p></td>
+<td><p>INMH</p></td>
+<td><p>N</p></td>
+<td><p>&nbsp;</p></td>
+<td><p>D</p></td>
+<td><p>Inferred Matching Status</p></td>
+</tr>
+<tr valign="top">
+<td><p>&nbsp;</p></td>
+<td><p>or</p></td>
+<td><p>TPRC</p></td>
+<td><p>N</p></td>
+<td><p>&nbsp;</p></td>
+<td><p>D</p></td>
+<td><p>Processing Change Command Status</p></td>
+</tr>
+</tbody></table>
+
+
+</div>
+
+<div class="flddfn">
+<h3>Definition</h3>
+<p>This qualified generic field specifies:</p>
+<table border="0" cellpadding="5" width="100%" class="qualifierdefinitiontab">
+<tbody><tr valign="top">
+<td width="13%"><p>CALL</p></td>
+<td width="20%"><p>Repo Call Request Status</p></td>
+<td width="67%"><p>Provides the status of the repo call request.</p></td>
+</tr>
+<tr valign="top">
+<td><p>CPRC</p></td>
+<td><p>Cancellation Processing Status</p></td>
+<td><p>Provides the status of a cancellation request.</p></td>
+</tr>
+<tr valign="top">
+<td><p>INMH</p></td>
+<td><p>Inferred Matching Status</p></td>
+<td><p>Provides the matching status of an instruction as per the account servicer based on an allegement. At this time no matching took place on the market (at the CSD/ICSD).</p></td>
+</tr>
+<tr valign="top">
+<td><p>IPRC</p></td>
+<td><p>Instruction Processing Status</p></td>
+<td><p>Provides the processing status of an instruction (at account servicer level).</p></td>
+</tr>
+<tr valign="top">
+<td><p>MTCH</p></td>
+<td><p>Matching Status</p></td>
+<td><p>Provides the matching status of the instruction.</p></td>
+</tr>
+<tr valign="top">
+<td><p>SETT</p></td>
+<td><p>Settlement Status</p></td>
+<td><p>Provides the status of settlement of an instruction.</p></td>
+</tr>
+<tr valign="top">
+<td><p>SPRC</p></td>
+<td><p>Request for Statement/Status Advice Status</p></td>
+<td><p>Provides the status of an MT 549 - Request for Statement/Status Advice.</p></td>
+</tr>
+<tr valign="top">
+<td><p>TPRC</p></td>
+<td><p>Processing Change Command Status</p></td>
+<td><p>Provides the status of a processing change command. </p></td>
+</tr>
+</tbody></table>
+
+
+</div>
+
+<div class="fldctu">
+<h3>Codes</h3>
+<p>If Qualifier is CPRC and Data Source Scheme is not present, Status Code must contain one of the following codes <span class="ecs"> (Error code(s): <a href="publications/usgf_20180720/3.0?topic=ecknn.htm" class="ecode">K25</a>)</span>:</p>
+<table border="0" cellpadding="5" width="100%" class="codestable">
+<tbody><tr valign="top">
+<td width="13%"><p>CAND</p></td>
+<td width="20%"><p>Cancellation Completed</p></td>
+<td width="67%"><p>Cancellation has been completed.</p></td>
+</tr>
+<tr valign="top">
+<td><p>CANP</p></td>
+<td><p>Pending Cancellation</p></td>
+<td><p>Cancellation is pending. It is not known at this time whether cancellation can be affected.</p></td>
+</tr>
+<tr valign="top">
+<td><p>DEND</p></td>
+<td><p>Denied</p></td>
+<td><p>Cancellation will not be executed.</p></td>
+</tr>
+<tr valign="top">
+<td><p>PACK</p></td>
+<td><p>Accepted</p></td>
+<td><p>Cancellation request has been acknowledged for further processing by the account servicer.</p></td>
+</tr>
+<tr valign="top">
+<td><p>REJT</p></td>
+<td><p>Rejected</p></td>
+<td><p>Cancellation has been rejected for further processing.</p></td>
+</tr>
+</tbody></table>
+
+
+</div>
+
+<div class="fldctu">
+<h3>Codes</h3>
+<p>If Qualifier is IPRC and Data Source Scheme is not present, Status Code must contain one of the following codes <span class="ecs"> (Error code(s): <a href="publications/usgf_20180720/3.0?topic=ecknn.htm" class="ecode">K25</a>)</span>:</p>
+<table border="0" cellpadding="5" width="100%" class="codestable">
+<tbody><tr valign="top">
+<td width="13%"><p>CAND</p></td>
+<td width="20%"><p>Cancelled</p></td>
+<td width="67%"><p>Instruction has been cancelled (in an MT548, as an answer to an MT549 instruction status request).</p></td>
+</tr>
+<tr valign="top">
+<td><p>CANP</p></td>
+<td><p>Pending Cancellation</p></td>
+<td><p>A cancellation request from yourself for this instruction is pending waiting for further processing (in an MT548, as an answer to an MT549 instruction status request).</p></td>
+</tr>
+<tr valign="top">
+<td><p>CGEN</p></td>
+<td><p>Generated</p></td>
+<td><p>The transaction was created by the account servicer or a third party. It was not instructed directly by the account owner.</p></td>
+</tr>
+<tr valign="top">
+<td><p>CPRC</p></td>
+<td><p>Cancellation Request</p></td>
+<td><p>A cancellation request from your counterparty for this transaction is pending waiting for your cancellation request.</p></td>
+</tr>
+<tr valign="top">
+<td><p>MPRC</p></td>
+<td><p>Modification Request</p></td>
+<td><p>A modification request from your counterparty for this transaction is pending waiting for your modification request or your consent.</p></td>
+</tr>
+<tr valign="top">
+<td><p>PACK</p></td>
+<td><p>Acknowledged/Accepted</p></td>
+<td><p>Instruction has been acknowledged by the account servicer.</p></td>
+</tr>
+<tr valign="top">
+<td><p>PPRC</p></td>
+<td><p>Pending Processing</p></td>
+<td><p>Processing of the instruction is pending.</p></td>
+</tr>
+<tr valign="top">
+<td><p>REJT</p></td>
+<td><p>Rejected</p></td>
+<td><p>Instruction has been rejected for further processing.</p></td>
+</tr>
+<tr valign="top">
+<td><p>REPR</p></td>
+<td><p>Repair</p></td>
+<td><p>Instruction is accepted but in repair.</p></td>
+</tr>
+</tbody></table>
+
+
+</div>
+
+<div class="fldctu">
+<h3>Codes</h3>
+<p>If Qualifier is MTCH or Qualifier is INMH and Data Source Scheme is not present, Status Code must contain one of the following codes <span class="ecs"> (Error code(s): <a href="publications/usgf_20180720/3.0?topic=ecknn.htm" class="ecode">K25</a>)</span>:</p>
+<table border="0" cellpadding="5" width="100%" class="codestable">
+<tbody><tr valign="top">
+<td width="13%"><p>MACH</p></td>
+<td width="20%"><p>Matched</p></td>
+<td width="67%"><p>Instruction has been matched.</p></td>
+</tr>
+<tr valign="top">
+<td><p>NMAT</p></td>
+<td><p>Unmatched</p></td>
+<td><p>Instruction has not been matched.</p></td>
+</tr>
+</tbody></table>
+
+
+</div>
+
+<div class="fldctu">
+<h3>Codes</h3>
+<p>If Qualifier is SETT and Data Source Scheme is not present, Status Code must contain one of the following codes <span class="ecs"> (Error code(s): <a href="publications/usgf_20180720/3.0?topic=ecknn.htm" class="ecode">K25</a>)</span>:</p>
+<table border="0" cellpadding="5" width="100%" class="codestable">
+<tbody><tr valign="top">
+<td width="13%"><p>PEND</p></td>
+<td width="20%"><p>Pending Settlement</p></td>
+<td width="67%"><p>Instruction is pending. Settlement at the instructed settlement date is still possible.</p></td>
+</tr>
+<tr valign="top">
+<td><p>PENF</p></td>
+<td><p>Pending/Failing Settlement</p></td>
+<td><p>Instruction is failing. Settlement at the instructed settlement date is no longer possible.</p></td>
+</tr>
+</tbody></table>
+
+
+</div>
+
+<div class="fldctu">
+<h3>Codes</h3>
+<p>If Qualifier is SPRC and Data Source Scheme is not present, Status Code must contain the following code <span class="ecs"> (Error code(s): <a href="publications/usgf_20180720/3.0?topic=ecknn.htm" class="ecode">K25</a>)</span>:</p>
+<table border="0" cellpadding="5" width="100%" class="codestable">
+<tbody><tr valign="top">
+<td width="13%"><p>REJT</p></td>
+<td width="20%"><p>Rejected</p></td>
+<td width="67%"><p>Request for Statement/Status Advice MT549 has been rejected for further processing.</p></td>
+</tr>
+</tbody></table>
+
+
+</div>
+
+<div class="fldctu">
+<h3>Codes</h3>
+<p>If Qualifier is CALL and Data Source Scheme is not present, Status Code must contain one of the following codes <span class="ecs"> (Error code(s): <a href="publications/usgf_20180720/3.0?topic=ecknn.htm" class="ecode">K25</a>)</span>:</p>
+<table border="0" cellpadding="5" width="100%" class="codestable">
+<tbody><tr valign="top">
+<td width="13%"><p>CACK</p></td>
+<td width="20%"><p>Acknowledged/Accepted</p></td>
+<td width="67%"><p>Repo call request is acknowledged/accepted.</p></td>
+</tr>
+<tr valign="top">
+<td><p>DEND</p></td>
+<td><p>Denied</p></td>
+<td><p>Repo call request is denied.</p></td>
+</tr>
+</tbody></table>
+
+
+</div>
+
+<div class="fldctu">
+<h3>Codes</h3>
+<p>If Qualifier is TPRC and Data Source Scheme is not present, Status Code must contain one of the following codes <span class="ecs"> (Error code(s): <a href="publications/usgf_20180720/3.0?topic=ecknn.htm" class="ecode">K25</a>)</span>:</p>
+<table border="0" cellpadding="5" width="100%" class="codestable">
+<tbody><tr valign="top">
+<td width="13%"><p>DEND</p></td>
+<td width="20%"><p>Denied</p></td>
+<td width="67%"><p>Modification request will not be executed.</p></td>
+</tr>
+<tr valign="top">
+<td><p>MODC</p></td>
+<td><p>Modification Completed</p></td>
+<td><p>Modification has been completed.</p></td>
+</tr>
+<tr valign="top">
+<td><p>MOPN</p></td>
+<td><p>Modification Pending</p></td>
+<td><p>Modification is pending. It is unknown at this time whether the modification can be affected.</p></td>
+</tr>
+<tr valign="top">
+<td><p>PACK</p></td>
+<td><p>Acknowledged/Accepted</p></td>
+<td><p>Instruction has been acknowledged/accepted by the account servicer.</p></td>
+</tr>
+<tr valign="top">
+<td><p>REJT</p></td>
+<td><p>Rejected</p></td>
+<td><p>Instruction has been rejected for further processing.</p></td>
+</tr>
+</tbody></table>
+
+
+</div>
+
+</div>
+
+</div>

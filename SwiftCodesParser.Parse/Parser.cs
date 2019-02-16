@@ -38,7 +38,7 @@ namespace SwiftCodesParser.Parse
                         // get qualifier
                         doc = parser.ParseDocument(div.InnerHtml);
                         var p = doc.All.FirstOrDefault(m => m.LocalName == "p");
-                        var i = p.InnerHtml.IndexOf("if Qualifier is ");
+                        var i = p.InnerHtml.ToLower().IndexOf("if qualifier is ");
                         var qualifier = p.InnerHtml.Substring(i + 16, 4);
                         codes = codes.Concat(ExtractCodes(doc, qualifier)).ToList();
                         break;
@@ -56,9 +56,9 @@ namespace SwiftCodesParser.Parse
             {
                 yield return new SwiftCodeDescriptor
                 {
-                    Code = tr.Children[0].TextContent,
-                    Definition = tr.Children[1].TextContent,
-                    Description = tr.Children[2].TextContent,
+                    Code = tr.Children[0].TextContent.Trim(),
+                    Definition = tr.Children[1].TextContent.Trim(),
+                    Description = tr.Children[2].TextContent.Trim(),
                     IsQualifier = qualifier == null,
                     Qualifier = qualifier
                 };
