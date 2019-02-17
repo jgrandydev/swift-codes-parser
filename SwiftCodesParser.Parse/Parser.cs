@@ -10,14 +10,14 @@ namespace SwiftCodesParser.Parse
     public class Parser
     {
 
-        public IEnumerable<SwiftCodeDescriptor> ParseHtmlToCodeDescriptors(string html)
+        public IEnumerable<SwiftCodeDescriptor> ParseHtmlToCodeDescriptors(string html, string messageType)
         {
-            var codes = new List<SwiftCodeDescriptor>();
+            IEnumerable<SwiftCodeDescriptor> codes = null;
 
-            var parser = new AngleSharp.Html.Parser.HtmlParser();
+            var parser = new HtmlParser();
             var doc = parser.ParseDocument(html);
-
             var divs = doc.All.Where(m => m.LocalName == "div");
+            string qualifier = string.Empty;
             foreach (var div in divs)
             {
                 switch (div.ClassName)
@@ -31,7 +31,12 @@ namespace SwiftCodesParser.Parse
 
                     case "flddfn":
                         doc = parser.ParseDocument(div.InnerHtml);
-                        codes = codes.Concat(ExtractCodes(doc, null)).ToList();
+                        codes = ExtractCodes(doc, messageType, null);
+                        var list = codes.ToList();
+                        if (list.Count > 0 && list[0].IsQualifier)
+                        {
+                            qualifier = list[0].Code;
+                        }
                         break;
 
                     case "fldctu":
@@ -39,8 +44,11 @@ namespace SwiftCodesParser.Parse
                         doc = parser.ParseDocument(div.InnerHtml);
                         var p = doc.All.FirstOrDefault(m => m.LocalName == "p");
                         var i = p.InnerHtml.ToLower().IndexOf("if qualifier is ");
-                        var qualifier = p.InnerHtml.Substring(i + 16, 4);
-                        codes = codes.Concat(ExtractCodes(doc, qualifier)).ToList();
+                        if (i >= 0)
+                        {
+                            qualifier = p.InnerHtml.Substring(i + 16, 4);
+                        }
+                        codes = codes.Concat(ExtractCodes( doc, messageType, qualifier)).ToList();
                         break;
                 }
             }
@@ -48,7 +56,7 @@ namespace SwiftCodesParser.Parse
             return codes;
         }
 
-        public IEnumerable<SwiftCodeDescriptor> ExtractCodes(AngleSharp.Html.Dom.IHtmlDocument doc, string qualifier)
+        public IEnumerable<SwiftCodeDescriptor> ExtractCodes(AngleSharp.Html.Dom.IHtmlDocument doc, string messageType, string qualifier)
         {
             var trs = doc.All.Where(m => m.LocalName == "tr" && m.HasAttribute("valign") && m.HasChildNodes && m.ChildElementCount == 3);
 
@@ -56,6 +64,7 @@ namespace SwiftCodesParser.Parse
             {
                 yield return new SwiftCodeDescriptor
                 {
+                    MessageType =  messageType,
                     Code = tr.Children[0].TextContent.Trim(),
                     Definition = tr.Children[1].TextContent.Trim(),
                     Description = tr.Children[2].TextContent.Trim(),

@@ -1,0 +1,101 @@
+<div class="main">
+<div class="fldblock">
+<h2>MT&nbsp;545: (7) Field 22F: Indicator: Linkage Type Indicator</h2>
+
+<div class="fldfmt">
+<h3>Format</h3>
+
+<table border="0" cellpadding="5" width="100%" class="format formattable">
+<tbody><tr valign="top">
+<td width="20%">Option F</td>
+<td width="30%">:4!c/[8c]/4!c</td>
+<td width="50%">(Qualifier)(Data Source Scheme)(Indicator)</td>
+</tr>
+</tbody></table>
+
+
+</div>
+
+<div class="fldpres">
+<h3>Presence</h3>
+<p>Optional in mandatory subsequence A1</p>
+</div>
+
+<div class="fldqual">
+<h3>Qualifier</h3>
+<p><span class="ecs"> (Error code(s): <a href="publications/usgf_20180720/3.0?topic=ect89.htm" class="ecode">T89</a>)</span></p>
+<table border="1" cellpadding="5" width="100%" class="qualifiertab">
+<tbody><tr valign="top">
+<th width="10%"><p>Order</p></th>
+<th width="8%"><p>M/O</p></th>
+<th width="13%"><p>Qualifier</p></th>
+<th width="7%"><p>R/N</p></th>
+<th width="8%"><p>CR</p></th>
+<th width="10%"><p>Options</p></th>
+<th width="43%"><p>Qualifier Description</p></th>
+</tr>
+<tr valign="top">
+<td width="10%"><p>1</p></td>
+<td width="8%"><p>O</p></td>
+<td width="13%"><p>LINK</p></td>
+<td width="7%"><p>N</p></td>
+<td width="8%"><p>&nbsp;</p></td>
+<td width="10%"><p>F</p></td>
+<td width="43%"><p>Linkage Type Indicator</p></td>
+</tr>
+</tbody></table>
+
+
+</div>
+
+<div class="flddfn">
+<h3>Definition</h3>
+<p>This qualified generic field specifies:</p>
+<table border="0" cellpadding="5" width="100%" class="qualifierdefinitiontab">
+<tbody><tr valign="top">
+<td width="13%"><p>LINK</p></td>
+<td width="20%"><p>Linkage Type Indicator</p></td>
+<td width="67%"><p>Specifies when the instruction is to be executed relative to a linked instruction.</p></td>
+</tr>
+</tbody></table>
+
+
+</div>
+
+<div class="fldctu">
+<h3>Codes</h3>
+<p>If Data Source Scheme is not present, Indicator must contain one of the following codes <span class="ecs"> (Error code(s): <a href="publications/usgf_20180720/3.0?topic=ecknn.htm" class="ecode">K22</a>)</span>:</p>
+<table border="0" cellpadding="5" width="100%" class="codestable">
+<tbody><tr valign="top">
+<td width="13%"><p>AFTE</p></td>
+<td width="20%"><p>After</p></td>
+<td width="67%"><p>Indicates that the message is to be processed after the linked message.</p></td>
+</tr>
+<tr valign="top">
+<td><p>BEFO</p></td>
+<td><p>Before</p></td>
+<td><p>Indicates that the message is to be processed before the linked message.</p></td>
+</tr>
+<tr valign="top">
+<td><p>INFO</p></td>
+<td><p>Information</p></td>
+<td><p>Indicates that the messages are linked for information purposes only.</p></td>
+</tr>
+<tr valign="top">
+<td><p>WITH</p></td>
+<td><p>With</p></td>
+<td><p>Indicates that the message is to be processed with the linked message.</p></td>
+</tr>
+</tbody></table>
+
+
+</div>
+
+<div class="fldug">
+<h3>Usage Rules</h3>
+<p>If code WITH is used, it links together one or more instructions which become bound and which must be executed together. Even if one single instruction can not be executed, then all the other instructions must also be kept pending. Therefore the use of code WITH must be limited to combine up to 2 or 3 instructions.</p>
+</div>
+
+</div>
+
+</div>

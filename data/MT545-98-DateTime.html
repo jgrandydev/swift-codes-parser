@@ -1,0 +1,165 @@
+<div class="main">
+<div class="fldblock">
+<h2>MT&nbsp;545: (14) Field 98a: Date/Time</h2>
+
+<div class="fldfmt">
+<h3>Format</h3>
+
+<table border="0" cellpadding="5" width="100%" class="format formattable">
+<tbody><tr valign="top">
+<td width="20%">Option A</td>
+<td width="30%">:4!c//8!n</td>
+<td width="50%">(Qualifier)(Date)</td>
+</tr>
+<tr valign="top">
+<td>Option B</td>
+<td>:4!c/[8c]/4!c</td>
+<td>(Qualifier)(Data Source Scheme)(Date Code)</td>
+</tr>
+<tr valign="top">
+<td>Option C</td>
+<td>:4!c//8!n6!n</td>
+<td>(Qualifier)(Date)(Time)</td>
+</tr>
+<tr valign="top">
+<td>Option E</td>
+<td>:4!c//8!n6!n[,3n][/[N]2!n[2!n]]</td>
+<td>(Qualifier)(Date)(Time)(Decimals)(UTC Indicator)</td>
+</tr>
+</tbody></table>
+
+
+</div>
+
+<div class="fldpres">
+<h3>Presence</h3>
+<p>Mandatory in mandatory sequence B</p>
+</div>
+
+<div class="fldqual">
+<h3>Qualifier</h3>
+<p><span class="ecs"> (Error code(s): <a href="publications/usgf_20180720/3.0?topic=ect89.htm" class="ecode">T89</a>)</span></p>
+<table border="1" cellpadding="5" width="100%" class="qualifiertab">
+<tbody><tr valign="top">
+<th width="10%"><p>Order</p></th>
+<th width="8%"><p>M/O</p></th>
+<th width="13%"><p>Qualifier</p></th>
+<th width="7%"><p>R/N</p></th>
+<th width="8%"><p>CR</p></th>
+<th width="10%"><p>Options</p></th>
+<th width="43%"><p>Qualifier Description</p></th>
+</tr>
+<tr valign="top">
+<td width="10%"><p>1</p></td>
+<td width="8%"><p>O</p></td>
+<td width="13%"><p>SETT</p></td>
+<td width="7%"><p>N</p></td>
+<td width="8%"><p>&nbsp;</p></td>
+<td width="10%"><p>A, B, or C</p></td>
+<td width="43%"><p>Settlement Date/Time</p></td>
+</tr>
+<tr valign="top">
+<td><p>2</p></td>
+<td><p>O</p></td>
+<td><p>TRAD</p></td>
+<td><p>N</p></td>
+<td><p>&nbsp;</p></td>
+<td><p>A, B, C, or E</p></td>
+<td><p>Trade Date/Time</p></td>
+</tr>
+<tr valign="top">
+<td><p>3</p></td>
+<td><p>M</p></td>
+<td><p>ESET</p></td>
+<td><p>N</p></td>
+<td><p>&nbsp;</p></td>
+<td><p>A, B, or C</p></td>
+<td><p>Effective Settlement Date/Time</p></td>
+</tr>
+</tbody></table>
+
+
+</div>
+
+<div class="flddfn">
+<h3>Definition</h3>
+<p>This qualified generic field specifies:</p>
+<table border="0" cellpadding="5" width="100%" class="qualifierdefinitiontab">
+<tbody><tr valign="top">
+<td width="13%"><p>ESET</p></td>
+<td width="20%"><p>Effective Settlement Date/Time</p></td>
+<td width="67%"><p>Date/time at which a transaction effectively settled.</p></td>
+</tr>
+<tr valign="top">
+<td><p>SETT</p></td>
+<td><p>Settlement Date/Time</p></td>
+<td><p>Date/time at which the financial instruments are to be delivered or received.</p></td>
+</tr>
+<tr valign="top">
+<td><p>TRAD</p></td>
+<td><p>Trade Date/Time</p></td>
+<td><p>Date/time at which the trade was executed.</p></td>
+</tr>
+</tbody></table>
+
+
+</div>
+
+<div class="fldctu">
+<h3>Codes</h3>
+<p>In option B, if Qualifier is SETT and Data Source Scheme is not present, Date Code must contain the following code <span class="ecs"> (Error code(s): <a href="publications/usgf_20180720/3.0?topic=ecknn.htm" class="ecode">K98</a>)</span>:</p>
+<table border="0" cellpadding="5" width="100%" class="codestable">
+<tbody><tr valign="top">
+<td width="13%"><p>WISS</p></td>
+<td width="20%"><p>When Issued</p></td>
+<td width="67%"><p>Settlement is to be done when the security is issued.</p></td>
+</tr>
+</tbody></table>
+
+
+</div>
+
+<div class="fldctu">
+<h3>Codes</h3>
+<p>In option B, if Qualifier is TRAD and Data Source Scheme is not present, Date Code must contain the following code <span class="ecs"> (Error code(s): <a href="publications/usgf_20180720/3.0?topic=ecknn.htm" class="ecode">K98</a>)</span>:</p>
+<table border="0" cellpadding="5" width="100%" class="codestable">
+<tbody><tr valign="top">
+<td width="13%"><p>VARI</p></td>
+<td width="20%"><p>Various</p></td>
+<td width="67%"><p>Partial trades have occurred over a period of two or more days.</p></td>
+</tr>
+</tbody></table>
+
+
+</div>
+
+<div class="fldnvr">
+<h3>Network Validated Rules</h3>
+<p>Date must be a valid date expressed as YYYYMMDD <span class="ecs"> (Error code(s): <a href="publications/usgf_20180720/3.0?topic=ect50.htm" class="ecode">T50</a>)</span>.</p><p>Time must be a valid time expressed as HHMMSS <span class="ecs"> (Error code(s): <a href="publications/usgf_20180720/3.0?topic=ect38.htm" class="ecode">T38</a>)</span>.</p><p>UTC Indicator must be a valid time expressed as HH[MM] <span class="ecs"> (Error code(s): <a href="publications/usgf_20180720/3.0?topic=ect39.htm" class="ecode">T39</a>)</span>.</p><p>Sign ([N]) must not be used when UTC Indicator is equal to all zeroes <span class="ecs"> (Error code(s): <a href="publications/usgf_20180720/3.0?topic=ect14.htm" class="ecode">T14</a>)</span>.</p>
+</div>
+
+<div class="fldug">
+<h3>Usage Rules</h3>
+<p>Trade Date/Time, when used with format 98C or 98E, must be the local time of the place of trade, for example, of the stock exchange, or of the selling broker for OTC.</p>
+</div>
+
+<div class="fldmp">
+<h3>Market Practice Rules</h3>
+<p>In addition to the settlement date (ISO 15022 mandatory), trade date is one of the 10 common elements recommended by SMPG for equities and fixed income settlement instructions.</p>
+</div>
+
+<div class="fldxmp">
+<h3>Example</h3>
+<p>Examples of format option E usage:</p>
+<ul>
+<li><p>Trade date/time is the 23rd of October 2006, at 12:35 and 48 seconds, 2 tenths of a second</p><p><span class="syntaxinline"> :98E::TRAD//20061023123548,2</span></p></li>
+<li><p>Trade date/time is the 23rd of October 2006, at 12:35 and 48 seconds, 25 hundreds of a second, UTC time +2</p><p><span class="syntaxinline"> :98E::TRAD//20061023123548,25/02</span></p></li>
+<li><p>Trade date/time is the 23rd of October 2006, at 12:35 and 48 seconds, UTC time - 4</p><p><span class="syntaxinline"> :98E::TRAD//20061023123548/N04</span></p></li>
+<li><p>Trade date/time is the 23rd of October 2006, at 12:35 and 48 seconds, UTC time - 2h30</p><p><span class="syntaxinline"> 98E::TRAD//20061023123548/N0230</span></p></li>
+</ul>
+
+</div>
+
+</div>
+
+</div>

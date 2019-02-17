@@ -1,0 +1,207 @@
+<div class="main">
+<div class="fldblock">
+<h2>MT&nbsp;548: (18) Field 94a: Place</h2>
+
+<div class="fldfmt">
+<h3>Format</h3>
+
+<table border="0" cellpadding="5" width="100%" class="format formattable">
+<tbody><tr valign="top">
+<td width="20%">Option B</td>
+<td width="30%">:4!c/[8c]/4!c[/30x]</td>
+<td width="50%">(Qualifier)(Data Source Scheme)(Place Code)(Narrative)</td>
+</tr>
+<tr valign="top">
+<td>Option C</td>
+<td>:4!c//2!a</td>
+<td>(Qualifier)(Country Code)</td>
+</tr>
+<tr valign="top">
+<td>Option F</td>
+<td>:4!c//4!c/4!a2!a2!c[3!c]</td>
+<td>(Qualifier)(Place Code)(Identifier Code)</td>
+</tr>
+<tr valign="top">
+<td>Option H</td>
+<td>:4!c//4!a2!a2!c[3!c]</td>
+<td>(Qualifier)(Identifier Code)</td>
+</tr>
+<tr valign="top">
+<td>Option L</td>
+<td>:4!c//18!c2!n</td>
+<td>(Qualifier)(Legal Entity Identifier)</td>
+</tr>
+</tbody></table>
+
+
+</div>
+
+<div class="fldpres">
+<h3>Presence</h3>
+<p>Optional in optional sequence B</p>
+</div>
+
+<div class="fldqual">
+<h3>Qualifier</h3>
+<p><span class="ecs"> (Error code(s): <a href="publications/usgf_20180720/3.0?topic=ect89.htm" class="ecode">T89</a>)</span></p>
+<table border="1" cellpadding="5" width="100%" class="qualifiertab">
+<tbody><tr valign="top">
+<th width="10%"><p>Order</p></th>
+<th width="8%"><p>M/O</p></th>
+<th width="13%"><p>Qualifier</p></th>
+<th width="7%"><p>R/N</p></th>
+<th width="8%"><p>CR</p></th>
+<th width="10%"><p>Options</p></th>
+<th width="43%"><p>Qualifier Description</p></th>
+</tr>
+<tr valign="top">
+<td width="10%"><p>1</p></td>
+<td width="8%"><p>O</p></td>
+<td width="13%"><p>CLEA</p></td>
+<td width="7%"><p>R</p></td>
+<td width="8%"><p>C10</p></td>
+<td width="10%"><p>H or L</p></td>
+<td width="43%"><p>Place of Clearing</p></td>
+</tr>
+<tr valign="top">
+<td><p>2</p></td>
+<td><p>O</p></td>
+<td><p>TRAD</p></td>
+<td><p>R</p></td>
+<td><p>C10</p></td>
+<td><p>B or L</p></td>
+<td><p>Place of Trade</p></td>
+</tr>
+<tr valign="top">
+<td><p>3</p></td>
+<td><p>O</p></td>
+<td><p>SAFE</p></td>
+<td><p>R</p></td>
+<td><p>C10</p></td>
+<td><p>B, C, F, or L</p></td>
+<td><p>Place of Safekeeping</p></td>
+</tr>
+</tbody></table>
+
+
+</div>
+
+<div class="flddfn">
+<h3>Definition</h3>
+<p>This qualified generic field specifies:</p>
+<table border="0" cellpadding="5" width="100%" class="qualifierdefinitiontab">
+<tbody><tr valign="top">
+<td width="13%"><p>CLEA</p></td>
+<td width="20%"><p>Place of Clearing</p></td>
+<td width="67%"><p>Place at which the trade is cleared (Central Counterparty).</p></td>
+</tr>
+<tr valign="top">
+<td><p>SAFE</p></td>
+<td><p>Place of Safekeeping</p></td>
+<td><p>Location where the financial instrument are/will be safekept.</p></td>
+</tr>
+<tr valign="top">
+<td><p>TRAD</p></td>
+<td><p>Place of Trade</p></td>
+<td><p>Place at which the order was traded, directly by the account owner or not.</p></td>
+</tr>
+</tbody></table>
+
+
+</div>
+
+<div class="fldctu">
+<h3>Codes</h3>
+<p>In option B, if Qualifier is TRAD and Data Source Scheme is not present, Place Code must contain one of the following codes <span class="ecs"> (Error code(s): <a href="publications/usgf_20180720/3.0?topic=ecknn.htm" class="ecode">K94</a>)</span>:</p>
+<table border="0" cellpadding="5" width="100%" class="codestable">
+<tbody><tr valign="top">
+<td width="13%"><p>EXCH</p></td>
+<td width="20%"><p>Stock Exchange</p></td>
+<td width="67%"><p>Place of trade is a stock exchange.</p></td>
+</tr>
+<tr valign="top">
+<td><p>OTCO</p></td>
+<td><p>Over The Counter</p></td>
+<td><p>Place of trade is over the counter.</p></td>
+</tr>
+<tr valign="top">
+<td><p>PRIM</p></td>
+<td><p>Primary Market</p></td>
+<td><p>Place of trade is the primary market.</p></td>
+</tr>
+<tr valign="top">
+<td><p>SECM</p></td>
+<td><p>Secondary Market</p></td>
+<td><p>Place of trade is the secondary market.</p></td>
+</tr>
+<tr valign="top">
+<td><p>VARI</p></td>
+<td><p>Various</p></td>
+<td><p>Trade was executed on various places.</p></td>
+</tr>
+</tbody></table>
+
+
+</div>
+
+<div class="fldctu">
+<h3>Codes</h3>
+<p>In option B, if Qualifier is SAFE and Data Source Scheme is not present, Place Code must contain the following code <span class="ecs"> (Error code(s): <a href="publications/usgf_20180720/3.0?topic=ecknn.htm" class="ecode">K94</a>)</span>:</p>
+<table border="0" cellpadding="5" width="100%" class="codestable">
+<tbody><tr valign="top">
+<td width="13%"><p>SHHE</p></td>
+<td width="20%"><p>Shares Held Elsewhere</p></td>
+<td width="67%"><p>Used for certain financial instruments, for example, US mutual funds, where settlement is internal only, that is, there is no external movement of securities.</p></td>
+</tr>
+</tbody></table>
+
+
+</div>
+
+<div class="fldctu">
+<h3>Codes</h3>
+<p>In option F, if Qualifier is SAFE, Place Code must contain one of the following codes <span class="ecs"> (Error code(s): <a href="publications/usgf_20180720/3.0?topic=ecknn.htm" class="ecode">K94</a>)</span>:</p>
+<table border="0" cellpadding="5" width="100%" class="codestable">
+<tbody><tr valign="top">
+<td width="13%"><p>CUST</p></td>
+<td width="20%"><p>Local Custodian</p></td>
+<td width="67%"><p>Financial instruments held at a local custodian.</p></td>
+</tr>
+<tr valign="top">
+<td><p>ICSD</p></td>
+<td><p>International Central Securities Depository</p></td>
+<td><p>Financial instruments held at an International Central Securities Depository.</p></td>
+</tr>
+<tr valign="top">
+<td><p>NCSD</p></td>
+<td><p>National Central Securities Depository</p></td>
+<td><p>Financial instruments held at a National Central Securities Depository.</p></td>
+</tr>
+<tr valign="top">
+<td><p>SHHE</p></td>
+<td><p>Shares Held Elsewhere</p></td>
+<td><p>Used for certain financial instruments, for example, US mutual funds, where settlement is internal only, that is, there is no external movement of securities.</p></td>
+</tr>
+</tbody></table>
+
+
+</div>
+
+<div class="fldnvr">
+<h3>Network Validated Rules</h3>
+<p>Country Code must be a valid ISO country code <span class="ecs"> (Error code(s): <a href="publications/usgf_20180720/3.0?topic=ect73.htm" class="ecode">T73</a>)</span>.</p><p>Identifier Code must be a registered BIC <span class="ecs"> (Error code(s): <a href="publications/usgf_20180720/3.0?topic=ect27.htm" class="ecode">T27</a>, <a href="publications/usgf_20180720/3.0?topic=ect28.htm" class="ecode">T28</a>, <a href="publications/usgf_20180720/3.0?topic=ect29.htm" class="ecode">T29</a>, <a href="publications/usgf_20180720/3.0?topic=ect45.htm" class="ecode">T45</a>)</span>.</p><p>Narrative (Format Option B) must not start or end with a slash '/' and must not contain two consecutive slashes '//' <span class="ecs"> (Error code(s): <a href="publications/usgf_20180720/3.0?topic=ect26.htm" class="ecode">T26</a>)</span>.</p>
+</div>
+
+<div class="fldug">
+<h3>Usage Rules</h3>
+<p>When qualifier is TRAD and Place Code is OTCO, Narrative, if present, must specify the system. When Place Code is EXCH, Narrative, if present, must specify the Market Identifier Code (MIC).</p><p>A cross-exchange netted transaction is to be identified by the combination of Various (Place field :94B::TRAD//VARI) and Netting (Indicator field :22F::SETR//NETT).</p>
+</div>
+
+<div class="fldxmp">
+<h3>Example</h3>
+<p><span class="syntaxinline"> :94B::TRAD//EXCH/XNYS</span></p><p>for the New York Stock Exchange.</p>
+</div>
+
+</div>
+
+</div>

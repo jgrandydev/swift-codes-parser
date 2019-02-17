@@ -25,15 +25,15 @@ namespace SwiftCodesParser.Persist
                 if (code.IsQualifier)
                 {
                     sql += $"INSERT INTO {TableName} ";
-                    sql += $"(QUALIFIER,QUALIFIER_DEFINITION,QUALIFIER_DESCRIPTION) ";
-                    sql += $"VALUES ({Quoted(code.Code)},{Quoted(code.Definition)},{Quoted(code.Description)})";
+                    sql += $"(MESSAGE_TYPE,QUALIFIER,QUALIFIER_DEFINITION,QUALIFIER_DESCRIPTION) ";
+                    sql += $"VALUES ({Quoted(code.MessageType)},{Quoted(code.Code)},{Quoted(code.Definition)},{Quoted(code.Description)})";
                     sql += Environment.NewLine;
                 }
                 else
                 {
                     sql += $"INSERT INTO {TableName} ";
-                    sql += $"(QUALIFIER,CODE,CODE_DEFINITION,CODE_DESCRIPTION) ";
-                    sql += $"VALUES ({Quoted(code.Qualifier)},{Quoted(code.Code)},{Quoted(code.Definition)},{Quoted(code.Description)})";
+                    sql += $"(MESSAGE_TYPE,QUALIFIER,CODE,CODE_DEFINITION,CODE_DESCRIPTION) ";
+                    sql += $"VALUES ({Quoted(code.MessageType)},{Quoted(code.Qualifier)},{Quoted(code.Code)},{Quoted(code.Definition)},{Quoted(code.Description)})";
                     sql += Environment.NewLine;
                 }
             }

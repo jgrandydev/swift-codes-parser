@@ -8,6 +8,7 @@ namespace SwiftCodesParser.Parse
 {
     public class SwiftCodeDescriptor
     {
+        public string MessageType { get; set; }
         public bool IsQualifier { get; set; }
         public string Qualifier { get; set; }
         public string Code { get; set; }

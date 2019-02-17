@@ -1,0 +1,138 @@
+<div class="main">
+<div class="fldblock">
+<h2>MT&nbsp;545: (5) Field 22a: Indicator</h2>
+
+<div class="fldfmt">
+<h3>Format</h3>
+
+<table border="0" cellpadding="5" width="100%" class="format formattable">
+<tbody><tr valign="top">
+<td width="20%">Option F</td>
+<td width="30%">:4!c/[8c]/4!c</td>
+<td width="50%">(Qualifier)(Data Source Scheme)(Indicator)</td>
+</tr>
+<tr valign="top">
+<td>Option H</td>
+<td>:4!c//4!c</td>
+<td>(Qualifier)(Indicator)</td>
+</tr>
+</tbody></table>
+
+
+</div>
+
+<div class="fldpres">
+<h3>Presence</h3>
+<p>Optional in mandatory sequence A</p>
+</div>
+
+<div class="fldqual">
+<h3>Qualifier</h3>
+<p><span class="ecs"> (Error code(s): <a href="publications/usgf_20180720/3.0?topic=ect89.htm" class="ecode">T89</a>)</span></p>
+<table border="1" cellpadding="5" width="100%" class="qualifiertab">
+<tbody><tr valign="top">
+<th width="10%"><p>Order</p></th>
+<th width="8%"><p>M/O</p></th>
+<th width="13%"><p>Qualifier</p></th>
+<th width="7%"><p>R/N</p></th>
+<th width="8%"><p>CR</p></th>
+<th width="10%"><p>Options</p></th>
+<th width="43%"><p>Qualifier Description</p></th>
+</tr>
+<tr valign="top">
+<td width="10%"><p>1</p></td>
+<td width="8%"><p>O</p></td>
+<td width="13%"><p>PREC</p></td>
+<td width="7%"><p>N</p></td>
+<td width="8%"><p>&nbsp;</p></td>
+<td width="10%"><p>H</p></td>
+<td width="43%"><p>Pre-Confirmation Indicator</p></td>
+</tr>
+<tr valign="top">
+<td><p>2</p></td>
+<td><p>O</p></td>
+<td><p>PARS</p></td>
+<td><p>N</p></td>
+<td><p>&nbsp;</p></td>
+<td><p>F</p></td>
+<td><p>Partial Settlement Indicator</p></td>
+</tr>
+</tbody></table>
+
+
+</div>
+
+<div class="flddfn">
+<h3>Definition</h3>
+<p>This qualified generic field specifies:</p>
+<table border="0" cellpadding="5" width="100%" class="qualifierdefinitiontab">
+<tbody><tr valign="top">
+<td width="13%"><p>PARS</p></td>
+<td width="20%"><p>Partial Settlement Indicator</p></td>
+<td width="67%"><p>Specifies partial settlement information.</p></td>
+</tr>
+<tr valign="top">
+<td><p>PREC</p></td>
+<td><p>Pre-Confirmation Indicator</p></td>
+<td><p>Specifies whether there exists a pre-confirmation.</p></td>
+</tr>
+</tbody></table>
+
+
+</div>
+
+<div class="fldctu">
+<h3>Codes</h3>
+<p>In option H, if Qualifier is PREC, Indicator must contain one of the following codes <span class="ecs"> (Error code(s): <a href="publications/usgf_20180720/3.0?topic=ecknn.htm" class="ecode">K22</a>)</span>:</p>
+<table border="0" cellpadding="5" width="100%" class="codestable">
+<tbody><tr valign="top">
+<td width="13%"><p>PRCA</p></td>
+<td width="20%"><p>Pre-Confirm Cash</p></td>
+<td width="67%"><p>Pre-confirmation of the movement of the cash pending the movement of securities.</p></td>
+</tr>
+<tr valign="top">
+<td><p>PRSE</p></td>
+<td><p>Pre-Confirm Securities</p></td>
+<td><p>Pre-confirmation of the movement of the securities pending the movement of cash.</p></td>
+</tr>
+</tbody></table>
+
+
+</div>
+
+<div class="fldctu">
+<h3>Codes</h3>
+<p>In option F, if Qualifier is PARS and Data Source Scheme is not present, Indicator must contain one of the following codes <span class="ecs"> (Error code(s): <a href="publications/usgf_20180720/3.0?topic=ecknn.htm" class="ecode">K22</a>)</span>:</p>
+<table border="0" cellpadding="5" width="100%" class="codestable">
+<tbody><tr valign="top">
+<td width="13%"><p>PAIN</p></td>
+<td width="20%"><p>Partial Settlement</p></td>
+<td width="67%"><p>Confirmation is for partial settlement. Part of the instruction remains unsettled.</p></td>
+</tr>
+<tr valign="top">
+<td><p>PARC</p></td>
+<td><p>Partially Confirmed</p></td>
+<td><p>Confirmation is for partial settlement. No additional settlement will take place.</p></td>
+</tr>
+</tbody></table>
+
+
+</div>
+
+<div class="fldmp">
+<h3>Market Practice Rules</h3>
+
+<ul>
+<li><p><b>Partial settlement:</b></p><p>This market practice only applies in markets where partial settlement is allowed.</p><p>The partial settlement indicators should be used as follows:</p>
+<ul>
+<li><p>:22F::PARS//PAIN is sent in the first message(s) (there may be more than one) confirming the partial settlement of an instruction.</p></li>
+<li><p>:22F::PARS//PARC is sent in the very last message sent to confirm the settlement of the remaining part.</p></li>
+</ul>
+</li>
+</ul>
+<p>For more details, see the relevant market practice document on <b>www.smpg.info</b>.</p>
+</div>
+
+</div>
+
+</div>

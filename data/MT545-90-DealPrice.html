@@ -1,0 +1,135 @@
+<div class="main">
+<div class="fldblock">
+<h2>MT&nbsp;545: (15) Field 90a: Price: Deal Price</h2>
+
+<div class="fldfmt">
+<h3>Format</h3>
+
+<table border="0" cellpadding="5" width="100%" class="format formattable">
+<tbody><tr valign="top">
+<td width="20%">Option A</td>
+<td width="30%">:4!c//4!c/[N]15d</td>
+<td width="50%">(Qualifier)(Percentage Type Code)(Sign)(Price)</td>
+</tr>
+<tr valign="top">
+<td>Option B</td>
+<td>:4!c//4!c/3!a15d</td>
+<td>(Qualifier)(Amount Type Code)(Currency Code)(Price)</td>
+</tr>
+</tbody></table>
+
+
+</div>
+
+<div class="fldpres">
+<h3>Presence</h3>
+<p>Optional in mandatory sequence B</p>
+</div>
+
+<div class="fldqual">
+<h3>Qualifier</h3>
+<p><span class="ecs"> (Error code(s): <a href="publications/usgf_20180720/3.0?topic=ect89.htm" class="ecode">T89</a>)</span></p>
+<table border="1" cellpadding="5" width="100%" class="qualifiertab">
+<tbody><tr valign="top">
+<th width="10%"><p>Order</p></th>
+<th width="8%"><p>M/O</p></th>
+<th width="13%"><p>Qualifier</p></th>
+<th width="7%"><p>R/N</p></th>
+<th width="8%"><p>CR</p></th>
+<th width="10%"><p>Options</p></th>
+<th width="43%"><p>Qualifier Description</p></th>
+</tr>
+<tr valign="top">
+<td width="10%"><p>1</p></td>
+<td width="8%"><p>O</p></td>
+<td width="13%"><p>DEAL</p></td>
+<td width="7%"><p>N</p></td>
+<td width="8%"><p>&nbsp;</p></td>
+<td width="10%"><p>A or B</p></td>
+<td width="43%"><p>Deal Price</p></td>
+</tr>
+</tbody></table>
+
+
+</div>
+
+<div class="flddfn">
+<h3>Definition</h3>
+<p>This qualified generic field specifies:</p>
+<table border="0" cellpadding="5" width="100%" class="qualifierdefinitiontab">
+<tbody><tr valign="top">
+<td width="13%"><p>DEAL</p></td>
+<td width="20%"><p>Deal Price</p></td>
+<td width="67%"><p>Price of the traded financial instrument.</p></td>
+</tr>
+</tbody></table>
+
+
+</div>
+
+<div class="fldctu">
+<h3>Codes</h3>
+<p>In option A, Percentage Type Code must contain one of the following codes <span class="ecs"> (Error code(s): <a href="publications/usgf_20180720/3.0?topic=ecknn.htm" class="ecode">K90</a>)</span>:</p>
+<table border="0" cellpadding="5" width="100%" class="codestable">
+<tbody><tr valign="top">
+<td width="13%"><p>DISC</p></td>
+<td width="20%"><p>Discount</p></td>
+<td width="67%"><p>Price expressed as the number of percentage points below par, for example, a discount price of 2.0% equals a price of 98 when par is 100.</p></td>
+</tr>
+<tr valign="top">
+<td><p>PRCT</p></td>
+<td><p>Percentage</p></td>
+<td><p>Price expressed as a percentage of par.</p></td>
+</tr>
+<tr valign="top">
+<td><p>PREM</p></td>
+<td><p>Premium</p></td>
+<td><p>Price expressed as the number of percentage points above par, for example, a premium price of 2.0% equals a price of 102 when par is 100.</p></td>
+</tr>
+<tr valign="top">
+<td><p>YIEL</p></td>
+<td><p>Yield</p></td>
+<td><p>Price expressed as a yield.</p></td>
+</tr>
+</tbody></table>
+
+
+</div>
+
+<div class="fldctu">
+<h3>Codes</h3>
+<p>In option B, Amount Type Code must contain one of the following codes <span class="ecs"> (Error code(s): <a href="publications/usgf_20180720/3.0?topic=ecknn.htm" class="ecode">K90</a>)</span>:</p>
+<table border="0" cellpadding="5" width="100%" class="codestable">
+<tbody><tr valign="top">
+<td width="13%"><p>ACTU</p></td>
+<td width="20%"><p>Actual Amount</p></td>
+<td width="67%"><p>Price expressed as an amount of currency per unit or per share.</p></td>
+</tr>
+<tr valign="top">
+<td><p>DISC</p></td>
+<td><p>Discount</p></td>
+<td><p>Price expressed as a discount amount.</p></td>
+</tr>
+<tr valign="top">
+<td><p>PREM</p></td>
+<td><p>Premium</p></td>
+<td><p>Price expressed as a premium.</p></td>
+</tr>
+</tbody></table>
+
+
+</div>
+
+<div class="fldnvr">
+<h3>Network Validated Rules</h3>
+<p>The integer part of Price must contain at least one digit. A decimal comma is mandatory and is included in the maximum length <span class="ecs"> (Error code(s): <a href="publications/usgf_20180720/3.0?topic=ect40.htm" class="ecode">T40</a>, <a href="publications/usgf_20180720/3.0?topic=ect43.htm" class="ecode">T43</a>)</span>.</p><p>Currency Code must be a valid ISO 4217 currency code <span class="ecs"> (Error code(s): <a href="publications/usgf_20180720/3.0?topic=ect52.htm" class="ecode">T52</a>)</span>.</p><p>Sign may only be present if Percentage Type Code is YIEL <span class="ecs"> (Error code(s): <a href="publications/usgf_20180720/3.0?topic=ect69.htm" class="ecode">T69</a>)</span>.</p><p>If Price is zero, Sign must not be present <span class="ecs"> (Error code(s): <a href="publications/usgf_20180720/3.0?topic=ect14.htm" class="ecode">T14</a>)</span>.</p>
+</div>
+
+<div class="fldug">
+<h3>Usage Rules</h3>
+<p>The number of decimal digits in Price is not validated against the currency specified.</p><p>Sign must be present when Price is negative.</p>
+</div>
+
+</div>
+
+</div>
